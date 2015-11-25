@@ -1,5 +1,0 @@
-objects/libmd5.r.o: \
- /home/jean/personal/learn/doctor/hevc/trunk/build/linux/lib/TLibCommon/../../../../source/Lib/libmd5/libmd5.c \
- /home/jean/personal/learn/doctor/hevc/trunk/build/linux/lib/TLibCommon/../../../../source/Lib/libmd5/libmd5.h
- /home/jean/personal/learn/doctor/hevc/trunk/build/linux/lib/TLibCommon/../../../../source/Lib/libmd5/libmd5.c :
- /home/jean/personal/learn/doctor/hevc/trunk/build/linux/lib/TLibCommon/../../../../source/Lib/libmd5/libmd5.h :
