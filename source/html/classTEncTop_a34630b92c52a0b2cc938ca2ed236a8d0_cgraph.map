@@ -1,6 +1,0 @@
-<map id="TEncTop::encode" name="TEncTop::encode">
-<area shape="rect" id="node2" href="$classTEncTop.html#a2d62cd40520860a32f0ac13685855a7e" title="get picture buffer which will be processed " alt="" coords="184,12,376,39"/>
-<area shape="rect" id="node5" href="$classTEncPreanalyzer.html#a247b109224d0a34328debc40e06410d9" title="TEncPreanalyzer::xPreanalyze" alt="" coords="179,63,381,89"/>
-<area shape="rect" id="node3" href="$classTEncPic.html#a61fe02cef3a2756fc023b71edd83b7ef" title="TEncPic::create" alt="" coords="430,12,546,39"/>
-<area shape="rect" id="node4" href="$classTEncPicQPAdaptationLayer.html#a36fe963d2fb4ee684132e9883b7571fc" title="TEncPicQPAdaptationLayer\l::create" alt="" coords="595,5,781,46"/>
-</map>

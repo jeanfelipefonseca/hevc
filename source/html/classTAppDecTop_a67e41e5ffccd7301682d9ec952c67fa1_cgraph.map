@@ -1,4 +1,0 @@
-<map id="TAppDecTop::xFlushOutput" name="TAppDecTop::xFlushOutput">
-<area shape="rect" id="node2" href="$classTVideoIOYuv.html#a1e0ade1f702a1d24a8290bb61de71b05" title="write one YUV frame with padding parameter " alt="" coords="240,5,376,32"/>
-<area shape="rect" id="node3" href="$classTComPicYuv.html#aa100491a0b6e465bcb332e9e2c60edd5" title="if true, then a margin of uiMaxCUWidth+16 and uiMaxCUHeight+16 is created around the image..." alt="" coords="424,5,568,32"/>
-</map>

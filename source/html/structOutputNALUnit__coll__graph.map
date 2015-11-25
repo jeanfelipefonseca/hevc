@@ -1,5 +1,0 @@
-<map id="OutputNALUnit" name="OutputNALUnit">
-<area shape="rect" id="node2" href="$structNALUnit.html" title="NALUnit" alt="" coords="5,83,77,109"/>
-<area shape="rect" id="node3" href="$classTComOutputBitstream.html" title="TComOutputBitstream" alt="" coords="102,83,255,109"/>
-<area shape="rect" id="node4" href="$classTComBitIf.html" title="pure virtual class for basic bit handling " alt="" coords="137,5,219,32"/>
-</map>

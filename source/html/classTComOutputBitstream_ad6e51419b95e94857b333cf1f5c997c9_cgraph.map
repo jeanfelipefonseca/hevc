@@ -1,5 +1,0 @@
-<map id="TComOutputBitstream::addSubstream" name="TComOutputBitstream::addSubstream">
-<area shape="rect" id="node2" href="$classTComOutputBitstream.html#a5ca5ebaf49235a82858295b91a17f67a" title="TComOutputBitstream\l::getNumberOfWrittenBits" alt="" coords="208,5,381,46"/>
-<area shape="rect" id="node3" href="$classTComOutputBitstream.html#aba619d657e7772f3736a15d4d03706d6" title="TComOutputBitstream\l::getFIFO" alt="" coords="218,70,371,111"/>
-<area shape="rect" id="node4" href="$classTComOutputBitstream.html#a804f4dcb6c5182a8d360d68ac849a85a" title="TComOutputBitstream\l::write" alt="" coords="218,135,371,177"/>
-</map>

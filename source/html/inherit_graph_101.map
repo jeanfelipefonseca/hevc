@@ -1,7 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classSyntaxElementWriter.html" title="SyntaxElementWriter" alt="" coords="5,19,152,45"/>
-<area shape="rect" id="node2" href="$classSEIWriter.html" title="SEIWriter" alt="" coords="205,5,283,32"/>
-<area shape="rect" id="node3" href="$classTEncCavlc.html" title="CAVLC encoder class. " alt="" coords="201,56,287,83"/>
-<area shape="rect" id="node4" href="$classTEncEntropyIf.html" title="entropy encoder pure class " alt="" coords="25,81,132,108"/>
-<area shape="rect" id="node5" href="$classTEncSbac.html" title="SBAC encoder class. " alt="" coords="203,107,285,133"/>
-</map>

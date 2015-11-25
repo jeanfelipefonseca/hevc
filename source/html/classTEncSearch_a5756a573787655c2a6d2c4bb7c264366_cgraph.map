@@ -1,6 +1,0 @@
-<map id="TEncSearch::xAddSymbolBitsInter" name="TEncSearch::xAddSymbolBitsInter">
-<area shape="rect" id="node2" href="$classTEncEntropy.html#a38ae7546cd038347f41ee84dc8e7714b" title="encode merge index " alt="" coords="265,5,449,46"/>
-<area shape="rect" id="node3" href="$classTEncEntropy.html#adc22243c038f82c46e56379d6cab5a7e" title="encode prediction mode " alt="" coords="254,71,461,97"/>
-<area shape="rect" id="node4" href="$classTEncEntropy.html#a44ce8f77921ba342649fa33d359b47b6" title="encode partition size " alt="" coords="258,121,457,148"/>
-<area shape="rect" id="node5" href="$classTEncEntropy.html#a2bbf32a5d83b40db4787379b12039506" title="encode coefficients " alt="" coords="267,172,447,199"/>
-</map>

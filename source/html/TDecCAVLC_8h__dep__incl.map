@@ -1,9 +1,0 @@
-<map id="Lib/TLibDecoder/TDecCAVLC.h" name="Lib/TLibDecoder/TDecCAVLC.h">
-<area shape="rect" id="node2" href="$TDecCAVLC_8cpp.html" title="CAVLC decoder class. " alt="" coords="5,80,227,107"/>
-<area shape="rect" id="node3" href="$TDecGop_8cpp.html" title="GOP decoder class. " alt="" coords="252,80,455,107"/>
-<area shape="rect" id="node4" href="$TDecTop_8h.html" title="decoder class (header) " alt="" coords="479,80,665,107"/>
-<area shape="rect" id="node5" href="$TAppDecTop_8h.html" title="Decoder application class (header) " alt="" coords="344,155,565,181"/>
-<area shape="rect" id="node8" href="$TDecTop_8cpp.html" title="decoder class " alt="" coords="589,155,788,181"/>
-<area shape="rect" id="node6" href="$decmain_8cpp.html" title="Decoder application main. " alt="" coords="229,229,435,256"/>
-<area shape="rect" id="node7" href="$TAppDecTop_8cpp.html" title="Decoder application class. " alt="" coords="460,229,693,256"/>
-</map>
