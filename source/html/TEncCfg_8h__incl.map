@@ -1,0 +1,11 @@
+<map id="Lib/TLibEncoder/TEncCfg.h" name="Lib/TLibEncoder/TEncCfg.h">
+<area shape="rect" id="node2" href="$CommonDef_8h.html" title="Defines version information, constants and small in&#45;line functions. " alt="" coords="292,304,481,331"/>
+<area shape="rect" id="node8" href="$TComSlice_8h.html" title="slice header and SPS class (header) " alt="" coords="235,80,415,107"/>
+<area shape="rect" id="node6" href="$TypeDef_8h.html" title="Define macros, basic types, new types and enumerations. " alt="" coords="543,379,624,405"/>
+<area shape="rect" id="node11" href="$TComRom_8h.html" title="global variables &amp; functions (header) " alt="" coords="941,229,1037,256"/>
+<area shape="rect" id="node13" href="$TComList_8h.html" title="general list class (header) " alt="" coords="79,229,169,256"/>
+<area shape="rect" id="node16" href="$TComChromaFormat_8h_source.html" title="TComChromaFormat.h" alt="" coords="467,155,623,181"/>
+<area shape="rect" id="node17" href="$TComRectangle_8h_source.html" title="TComRectangle.h" alt="" coords="403,229,531,256"/>
+<area shape="rect" id="node18" href="$ContextTables_8h.html" title="Defines constants and tables for SBAC. " alt="" coords="555,229,673,256"/>
+<area shape="rect" id="node19" href="$Debug_8h.html" title="Defines types and objects for environment&#45;variable&#45;based debugging and feature control. " alt="" coords="750,229,820,256"/>
+</map>

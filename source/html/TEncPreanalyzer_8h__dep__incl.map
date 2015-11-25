@@ -1,0 +1,12 @@
+<map id="Lib/TLibEncoder/TEncPreanalyzer.h" name="Lib/TLibEncoder/TEncPreanalyzer.h">
+<area shape="rect" id="node2" href="$TEncTop_8h.html" title="encoder class (header) " alt="" coords="707,80,891,107"/>
+<area shape="rect" id="node11" href="$TEncPreanalyzer_8cpp.html" title="source picture analyzer class " alt="" coords="915,80,1160,107"/>
+<area shape="rect" id="node3" href="$TAppEncTop_8h.html" title="Encoder application class (header) " alt="" coords="120,155,339,181"/>
+<area shape="rect" id="node6" href="$TEncCu_8cpp.html" title="Coding Unit (CU) encoder class. " alt="" coords="363,155,556,181"/>
+<area shape="rect" id="node7" href="$TEncGOP_8cpp.html" title="GOP encoder class. " alt="" coords="581,155,787,181"/>
+<area shape="rect" id="node8" href="$TEncSbac_8cpp.html" title="SBAC encoder class. " alt="" coords="811,155,1017,181"/>
+<area shape="rect" id="node9" href="$TEncSlice_8cpp.html" title="slice encoder class " alt="" coords="1043,155,1248,181"/>
+<area shape="rect" id="node10" href="$TEncTop_8cpp.html" title="encoder class " alt="" coords="1273,155,1471,181"/>
+<area shape="rect" id="node4" href="$encmain_8cpp.html" title="Encoder application main. " alt="" coords="5,229,211,256"/>
+<area shape="rect" id="node5" href="$TAppEncTop_8cpp.html" title="Encoder application class. " alt="" coords="235,229,468,256"/>
+</map>

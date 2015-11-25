@@ -1,0 +1,23 @@
+objects/TAppDecCfg.d.o: \
+ /home/jean/personal/learn/doctor/hevc/trunk/build/linux/app/TAppDecoder/../../../../source/App/TAppDecoder/TAppDecCfg.cpp \
+ /home/jean/personal/learn/doctor/hevc/trunk/build/linux/app/TAppDecoder/../../../../source/App/TAppDecoder/TAppDecCfg.h \
+ /home/jean/personal/learn/doctor/hevc/trunk/build/linux/app/TAppDecoder/../../../../source/Lib/TLibCommon/CommonDef.h \
+ /home/jean/personal/learn/doctor/hevc/trunk/build/linux/app/TAppDecoder/../../../../source/Lib/TLibCommon/TypeDef.h \
+ /home/jean/personal/learn/doctor/hevc/trunk/build/linux/app/TAppDecoder/../../../../source/Lib/TAppCommon/program_options_lite.h \
+ /home/jean/personal/learn/doctor/hevc/trunk/build/linux/app/TAppDecoder/../../../../source/Lib/TLibCommon/TComChromaFormat.h \
+ /home/jean/personal/learn/doctor/hevc/trunk/build/linux/app/TAppDecoder/../../../../source/Lib/TLibCommon/CommonDef.h \
+ /home/jean/personal/learn/doctor/hevc/trunk/build/linux/app/TAppDecoder/../../../../source/Lib/TLibCommon/TComRectangle.h \
+ /home/jean/personal/learn/doctor/hevc/trunk/build/linux/app/TAppDecoder/../../../../source/Lib/TLibCommon/ContextTables.h \
+ /home/jean/personal/learn/doctor/hevc/trunk/build/linux/app/TAppDecoder/../../../../source/Lib/TLibCommon/TComRom.h \
+ /home/jean/personal/learn/doctor/hevc/trunk/build/linux/app/TAppDecoder/../../../../source/Lib/TLibCommon/Debug.h
+ /home/jean/personal/learn/doctor/hevc/trunk/build/linux/app/TAppDecoder/../../../../source/App/TAppDecoder/TAppDecCfg.cpp :
+ /home/jean/personal/learn/doctor/hevc/trunk/build/linux/app/TAppDecoder/../../../../source/App/TAppDecoder/TAppDecCfg.h :
+ /home/jean/personal/learn/doctor/hevc/trunk/build/linux/app/TAppDecoder/../../../../source/Lib/TLibCommon/CommonDef.h :
+ /home/jean/personal/learn/doctor/hevc/trunk/build/linux/app/TAppDecoder/../../../../source/Lib/TLibCommon/TypeDef.h :
+ /home/jean/personal/learn/doctor/hevc/trunk/build/linux/app/TAppDecoder/../../../../source/Lib/TAppCommon/program_options_lite.h :
+ /home/jean/personal/learn/doctor/hevc/trunk/build/linux/app/TAppDecoder/../../../../source/Lib/TLibCommon/TComChromaFormat.h :
+ /home/jean/personal/learn/doctor/hevc/trunk/build/linux/app/TAppDecoder/../../../../source/Lib/TLibCommon/CommonDef.h :
+ /home/jean/personal/learn/doctor/hevc/trunk/build/linux/app/TAppDecoder/../../../../source/Lib/TLibCommon/TComRectangle.h :
+ /home/jean/personal/learn/doctor/hevc/trunk/build/linux/app/TAppDecoder/../../../../source/Lib/TLibCommon/ContextTables.h :
+ /home/jean/personal/learn/doctor/hevc/trunk/build/linux/app/TAppDecoder/../../../../source/Lib/TLibCommon/TComRom.h :
+ /home/jean/personal/learn/doctor/hevc/trunk/build/linux/app/TAppDecoder/../../../../source/Lib/TLibCommon/Debug.h :

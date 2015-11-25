@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classTComBitIf.html" title="pure virtual class for basic bit handling " alt="" coords="5,31,88,57"/>
+<area shape="rect" id="node2" href="$classTComBitCounter.html" title="class for counting bits " alt="" coords="153,5,273,32"/>
+<area shape="rect" id="node3" href="$classTComOutputBitstream.html" title="TComOutputBitstream" alt="" coords="137,56,290,83"/>
+</map>

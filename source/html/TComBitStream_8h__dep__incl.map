@@ -1,0 +1,51 @@
+<map id="Lib/TLibCommon/TComBitStream.h" name="Lib/TLibCommon/TComBitStream.h">
+<area shape="rect" id="node2" href="$TComPic_8h.html" title="picture class (header) " alt="" coords="2502,88,2692,115"/>
+<area shape="rect" id="node6" href="$TDecGop_8h.html" title="GOP decoder class (header) " alt="" coords="898,533,1085,560"/>
+<area shape="rect" id="node16" href="$TDecEntropy_8h.html" title="entropy decoder class (header) " alt="" coords="1506,269,1715,296"/>
+<area shape="rect" id="node19" href="$TDecSlice_8h.html" title="slice decoder class (header) " alt="" coords="1123,451,1316,477"/>
+<area shape="rect" id="node26" href="$TEncEntropy_8h.html" title="entropy encoder class (header) " alt="" coords="3449,269,3655,296"/>
+<area shape="rect" id="node27" href="$TEncSbac_8h.html" title="Context&#45;adaptive entropy encoder class (header) " alt="" coords="3653,360,3845,387"/>
+<area shape="rect" id="node31" href="$TEncCavlc_8h.html" title="CAVLC encoder class (header) " alt="" coords="4073,360,4268,387"/>
+<area shape="rect" id="node38" href="$TComBitCounter_8h.html" title="Class for counting bits (header) " alt="" coords="3293,360,3527,387"/>
+<area shape="rect" id="node39" href="$TComBitStream_8cpp.html" title="class for handling bitstream " alt="" coords="4383,88,4627,115"/>
+<area shape="rect" id="node40" href="$NALread_8h.html" title="reading functionality for NAL units " alt="" coords="330,88,512,115"/>
+<area shape="rect" id="node42" href="$NALread_8cpp.html" title="reading functionality for NAL units " alt="" coords="5,179,203,205"/>
+<area shape="rect" id="node43" href="$SEIread_8cpp.html" title="reading funtionality for SEI messages " alt="" coords="4651,88,4844,115"/>
+<area shape="rect" id="node44" href="$SyntaxElementParser_8cpp.html" title="Parsing functionality high level syntax. " alt="" coords="4869,81,5079,122"/>
+<area shape="rect" id="node45" href="$TDecBinCoder_8h.html" title="binary entropy decoder interface " alt="" coords="612,269,831,296"/>
+<area shape="rect" id="node47" href="$NALwrite_8h_source.html" title="Lib/TLibEncoder/NALwrite.h" alt="" coords="4174,88,4359,115"/>
+<area shape="rect" id="node49" href="$TEncBinCoder_8h.html" title="binary entropy encoder interface " alt="" coords="3680,269,3896,296"/>
+<area shape="rect" id="node50" href="$SyntaxElementWriter_8h.html" title="CAVLC encoder class (header) " alt="" coords="4123,262,4332,303"/>
+<area shape="rect" id="node3" href="$Debug_8cpp.html" title="Defines types and objects for environment&#45;variable&#45;based debugging and feature control. " alt="" coords="2947,179,3135,205"/>
+<area shape="rect" id="node4" href="$TComDataCU_8cpp.html" title="CU data structure. " alt="" coords="2357,179,2591,205"/>
+<area shape="rect" id="node5" href="$TComLoopFilter_8h.html" title="deblocking filter (header) " alt="" coords="2643,451,2872,477"/>
+<area shape="rect" id="node8" href="$TDecTop_8h.html" title="decoder class (header) " alt="" coords="1633,608,1820,635"/>
+<area shape="rect" id="node10" href="$TEncGOP_8h.html" title="GOP encoder class (header) " alt="" coords="3315,683,3505,709"/>
+<area shape="rect" id="node13" href="$TComPattern_8cpp.html" title="neighbouring pixel access classes " alt="" coords="3211,179,3439,205"/>
+<area shape="rect" id="node14" href="$TComPic_8cpp.html" title="picture class " alt="" coords="3464,179,3669,205"/>
+<area shape="rect" id="node15" href="$TComSampleAdaptiveOffset_8h.html" title="sample adaptive offset class (header) " alt="" coords="2616,171,2821,213"/>
+<area shape="rect" id="node23" href="$TComSlice_8cpp.html" title="slice header and SPS class " alt="" coords="1854,451,2068,477"/>
+<area shape="rect" id="node25" href="$TEncSampleAdaptiveOffset_8h.html" title="estimation part of sample adaptive offset class (header) " alt="" coords="3328,443,3523,485"/>
+<area shape="rect" id="node28" href="$TEncSearch_8h.html" title="encoder search class (header) " alt="" coords="3780,451,3983,477"/>
+<area shape="rect" id="node30" href="$TEncSlice_8h.html" title="slice encoder class (header) " alt="" coords="3582,608,3772,635"/>
+<area shape="rect" id="node33" href="$TComPrediction_8cpp.html" title="prediction class " alt="" coords="1058,179,1301,205"/>
+<area shape="rect" id="node34" href="$TComTrQuant_8cpp.html" title="transform and quantization class " alt="" coords="1326,179,1559,205"/>
+<area shape="rect" id="node35" href="$TEncPic_8h.html" title="class of picture which includes side information for encoder (header) " alt="" coords="1584,179,1765,205"/>
+<area shape="rect" id="node36" href="$TEncRateCtrl_8cpp.html" title="Rate control manager class. " alt="" coords="1789,171,1968,213"/>
+<area shape="rect" id="node37" href="$WeightPredAnalysis_8cpp.html" title="weighted prediction encoder class " alt="" coords="2145,171,2332,213"/>
+<area shape="rect" id="node11" href="$TEncTop_8h.html" title="encoder class (header) " alt="" coords="3672,757,3856,784"/>
+<area shape="rect" id="node7" href="$TDecGop_8cpp.html" title="GOP decoder class. " alt="" coords="891,608,1093,635"/>
+<area shape="rect" id="node9" href="$TDecTop_8cpp.html" title="decoder class " alt="" coords="1013,683,1212,709"/>
+<area shape="rect" id="node12" href="$TEncGOP_8cpp.html" title="GOP encoder class. " alt="" coords="3661,832,3867,859"/>
+<area shape="rect" id="node24" href="$TDecEntropy_8cpp.html" title="entropy decoder class " alt="" coords="2313,360,2535,387"/>
+<area shape="rect" id="node32" href="$TEncEntropy_8cpp.html" title="entropy encoder class " alt="" coords="2997,360,3219,387"/>
+<area shape="rect" id="node17" href="$TDecCAVLC_8h.html" title="CAVLC decoder class (header) " alt="" coords="1505,451,1713,477"/>
+<area shape="rect" id="node21" href="$TDecCu_8h.html" title="CU decoder class (header) " alt="" coords="1241,360,1423,387"/>
+<area shape="rect" id="node22" href="$TDecSbac_8h.html" title="SBAC decoder class (header) " alt="" coords="1447,360,1641,387"/>
+<area shape="rect" id="node18" href="$TDecCAVLC_8cpp.html" title="CAVLC decoder class. " alt="" coords="1391,533,1613,560"/>
+<area shape="rect" id="node20" href="$TDecSlice_8cpp.html" title="slice decoder class " alt="" coords="1110,533,1316,560"/>
+<area shape="rect" id="node29" href="$TEncCu_8h.html" title="Coding Unit (CU) encoder class (header) " alt="" coords="3584,533,3763,560"/>
+<area shape="rect" id="node41" href="$TAppDecTop_8cpp.html" title="Decoder application class. " alt="" coords="227,179,460,205"/>
+<area shape="rect" id="node46" href="$TDecBinCoderCABAC_8h.html" title="binary entropy decoder of CABAC " alt="" coords="587,353,793,394"/>
+<area shape="rect" id="node48" href="$AnnexBwrite_8h_source.html" title="Lib/TLibEncoder/AnnexBwrite.h" alt="" coords="4408,179,4613,205"/>
+</map>

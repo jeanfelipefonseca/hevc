@@ -1,0 +1,7 @@
+<map id="TComTrQuant::setFlatScalingList" name="TComTrQuant::setFlatScalingList">
+<area shape="rect" id="node2" href="$classTComTrQuant.html#abc7b69ee11eb57b28b81cee626bc2112" title="TComTrQuant::xsetFlatScalingList" alt="" coords="272,31,496,57"/>
+<area shape="rect" id="node5" href="$classTComTrQuant.html#aeffe0e7e8256286a627f9442c1b425db" title="TComTrQuant::setErrScale\lCoeff" alt="" coords="293,82,475,123"/>
+<area shape="rect" id="node3" href="$classTComTrQuant.html#a1c0a4819a45dc37a69b2ea3cc63323db" title="get Error Scale Coefficent " alt="" coords="551,56,750,83"/>
+<area shape="rect" id="node4" href="$classTComTrQuant.html#ad7a885d13dbbad93bb0c41a885041732" title="get Quant Coefficent " alt="" coords="545,5,757,32"/>
+<area shape="rect" id="node6" href="$classTComTrQuant.html#a4b0086105317f9d1198af88a482dd253" title="get Error Scale Coefficent " alt="" coords="560,107,741,149"/>
+</map>

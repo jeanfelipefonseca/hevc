@@ -1,0 +1,15 @@
+objects/NALwrite.r.o: \
+ /home/jean/personal/learn/doctor/hevc/trunk/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibEncoder/NALwrite.cpp \
+ /home/jean/personal/learn/doctor/hevc/trunk/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/NAL.h \
+ /home/jean/personal/learn/doctor/hevc/trunk/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/CommonDef.h \
+ /home/jean/personal/learn/doctor/hevc/trunk/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/TypeDef.h \
+ /home/jean/personal/learn/doctor/hevc/trunk/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/TComBitStream.h \
+ /home/jean/personal/learn/doctor/hevc/trunk/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibEncoder/NALwrite.h \
+ /home/jean/personal/learn/doctor/hevc/trunk/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/CommonDef.h
+ /home/jean/personal/learn/doctor/hevc/trunk/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibEncoder/NALwrite.cpp :
+ /home/jean/personal/learn/doctor/hevc/trunk/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/NAL.h :
+ /home/jean/personal/learn/doctor/hevc/trunk/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/CommonDef.h :
+ /home/jean/personal/learn/doctor/hevc/trunk/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/TypeDef.h :
+ /home/jean/personal/learn/doctor/hevc/trunk/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/TComBitStream.h :
+ /home/jean/personal/learn/doctor/hevc/trunk/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibEncoder/NALwrite.h :
+ /home/jean/personal/learn/doctor/hevc/trunk/build/linux/lib/TLibEncoder/../../../../source/Lib/TLibCommon/CommonDef.h :

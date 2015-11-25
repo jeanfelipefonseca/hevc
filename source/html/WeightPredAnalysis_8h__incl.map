@@ -1,0 +1,31 @@
+<map id="Lib/TLibEncoder/WeightPredAnalysis.h" name="Lib/TLibEncoder/WeightPredAnalysis.h">
+<area shape="rect" id="node2" href="$CommonDef_8h.html" title="Defines version information, constants and small in&#45;line functions. " alt="" coords="1650,859,1851,885"/>
+<area shape="rect" id="node8" href="$TComSlice_8h.html" title="slice header and SPS class (header) " alt="" coords="1395,635,1587,661"/>
+<area shape="rect" id="node24" href="$TEncCavlc_8h.html" title="CAVLC encoder class (header) " alt="" coords="1035,96,1133,123"/>
+<area shape="rect" id="node6" href="$TypeDef_8h.html" title="Define macros, basic types, new types and enumerations. " alt="" coords="1591,933,1672,960"/>
+<area shape="rect" id="node11" href="$TComRom_8h.html" title="global variables &amp; functions (header) " alt="" coords="782,784,879,811"/>
+<area shape="rect" id="node13" href="$TComList_8h.html" title="general list class (header) " alt="" coords="1233,784,1324,811"/>
+<area shape="rect" id="node16" href="$TComChromaFormat_8h_source.html" title="TComChromaFormat.h" alt="" coords="565,709,720,736"/>
+<area shape="rect" id="node17" href="$TComRectangle_8h_source.html" title="TComRectangle.h" alt="" coords="579,784,707,811"/>
+<area shape="rect" id="node18" href="$ContextTables_8h.html" title="Defines constants and tables for SBAC. " alt="" coords="238,784,356,811"/>
+<area shape="rect" id="node19" href="$Debug_8h.html" title="Defines types and objects for environment&#45;variable&#45;based debugging and feature control. " alt="" coords="433,784,503,811"/>
+<area shape="rect" id="node25" href="$TComBitStream_8h.html" title="class for handling bitstream (header) " alt="" coords="5,784,213,811"/>
+<area shape="rect" id="node27" href="$TEncEntropy_8h.html" title="entropy encoder class (header) " alt="" coords="1303,171,1412,197"/>
+<area shape="rect" id="node46" href="$SyntaxElementWriter_8h.html" title="CAVLC encoder class (header) " alt="" coords="383,709,540,736"/>
+<area shape="rect" id="node28" href="$TComDataCU_8h.html" title="CU data structure (header) " alt="" coords="1939,485,2137,512"/>
+<area shape="rect" id="node35" href="$ContextModel_8h.html" title="context model class (header) " alt="" coords="999,709,1195,736"/>
+<area shape="rect" id="node36" href="$TComPic_8h.html" title="picture class (header) " alt="" coords="1616,336,1787,363"/>
+<area shape="rect" id="node43" href="$TComTrQuant_8h.html" title="transform and quantization class (header) " alt="" coords="899,411,1097,437"/>
+<area shape="rect" id="node45" href="$TComSampleAdaptiveOffset_8h.html" title="sample adaptive offset class (header) " alt="" coords="1625,246,1859,287"/>
+<area shape="rect" id="node29" href="$TComMotionInfo_8h.html" title="motion information handling classes (header) " alt="" coords="1780,560,1909,587"/>
+<area shape="rect" id="node32" href="$TComRdCost_8h.html" title="RD cost computation classes (header) " alt="" coords="1935,560,2049,587"/>
+<area shape="rect" id="node33" href="$TComPattern_8h.html" title="neighbouring pixel access classes (header) " alt="" coords="2030,635,2140,661"/>
+<area shape="rect" id="node31" href="$TComMv_8h.html" title="motion vector class (header) " alt="" coords="1817,635,1903,661"/>
+<area shape="rect" id="node34" href="$TComRdCostWeightPrediction_8h.html" title="RD cost computation namespace (header) " alt="" coords="1827,709,2040,736"/>
+<area shape="rect" id="node37" href="$TComPicSym_8h.html" title="picture symbol class (header) " alt="" coords="1744,411,1859,437"/>
+<area shape="rect" id="node39" href="$TComPicYuv_8h.html" title="picture YUV buffer class (header) " alt="" coords="851,635,961,661"/>
+<area shape="rect" id="node40" href="$SEI_8h_source.html" title="SEI.h" alt="" coords="1219,709,1273,736"/>
+<area shape="rect" id="node41" href="$MD5_8h_source.html" title="libmd5/MD5.h" alt="" coords="903,784,1005,811"/>
+<area shape="rect" id="node42" href="$libmd5_8h_source.html" title="libmd5.h" alt="" coords="926,859,996,885"/>
+<area shape="rect" id="node44" href="$TComYuv_8h.html" title="general YUV buffer class (header) " alt="" coords="1173,560,1264,587"/>
+</map>

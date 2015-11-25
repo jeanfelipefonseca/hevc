@@ -1,0 +1,9 @@
+<map id="Lib/TLibEncoder/TEncBinCoderCABAC.h" name="Lib/TLibEncoder/TEncBinCoderCABAC.h">
+<area shape="rect" id="node2" href="$TComCABACTables_8h.html" title="static class for CABAC tables " alt="" coords="5,171,241,197"/>
+<area shape="rect" id="node11" href="$TEncBinCoder_8h.html" title="binary entropy encoder interface " alt="" coords="306,96,424,123"/>
+<area shape="rect" id="node3" href="$CommonDef_8h.html" title="Defines version information, constants and small in&#45;line functions. " alt="" coords="181,320,371,347"/>
+<area shape="rect" id="node9" href="$TComRom_8h.html" title="global variables &amp; functions (header) " alt="" coords="149,245,328,272"/>
+<area shape="rect" id="node7" href="$TypeDef_8h.html" title="Define macros, basic types, new types and enumerations. " alt="" coords="388,395,469,421"/>
+<area shape="rect" id="node12" href="$ContextModel_8h.html" title="context model class (header) " alt="" coords="267,171,463,197"/>
+<area shape="rect" id="node13" href="$TComBitStream_8h.html" title="class for handling bitstream (header) " alt="" coords="403,245,612,272"/>
+</map>

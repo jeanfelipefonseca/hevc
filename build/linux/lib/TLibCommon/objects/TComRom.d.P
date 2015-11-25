@@ -1,0 +1,35 @@
+objects/TComRom.d.o: \
+ /home/jean/personal/learn/doctor/hevc/trunk/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComRom.cpp \
+ /home/jean/personal/learn/doctor/hevc/trunk/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComRom.h \
+ /home/jean/personal/learn/doctor/hevc/trunk/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/CommonDef.h \
+ /home/jean/personal/learn/doctor/hevc/trunk/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TypeDef.h \
+ /home/jean/personal/learn/doctor/hevc/trunk/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComDataCU.h \
+ /home/jean/personal/learn/doctor/hevc/trunk/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComMotionInfo.h \
+ /home/jean/personal/learn/doctor/hevc/trunk/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComMv.h \
+ /home/jean/personal/learn/doctor/hevc/trunk/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComSlice.h \
+ /home/jean/personal/learn/doctor/hevc/trunk/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComList.h \
+ /home/jean/personal/learn/doctor/hevc/trunk/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComChromaFormat.h \
+ /home/jean/personal/learn/doctor/hevc/trunk/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComRectangle.h \
+ /home/jean/personal/learn/doctor/hevc/trunk/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/ContextTables.h \
+ /home/jean/personal/learn/doctor/hevc/trunk/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/Debug.h \
+ /home/jean/personal/learn/doctor/hevc/trunk/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/CommonDef.h \
+ /home/jean/personal/learn/doctor/hevc/trunk/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComRdCost.h \
+ /home/jean/personal/learn/doctor/hevc/trunk/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComPattern.h \
+ /home/jean/personal/learn/doctor/hevc/trunk/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComRdCostWeightPrediction.h
+ /home/jean/personal/learn/doctor/hevc/trunk/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComRom.cpp :
+ /home/jean/personal/learn/doctor/hevc/trunk/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComRom.h :
+ /home/jean/personal/learn/doctor/hevc/trunk/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/CommonDef.h :
+ /home/jean/personal/learn/doctor/hevc/trunk/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TypeDef.h :
+ /home/jean/personal/learn/doctor/hevc/trunk/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComDataCU.h :
+ /home/jean/personal/learn/doctor/hevc/trunk/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComMotionInfo.h :
+ /home/jean/personal/learn/doctor/hevc/trunk/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComMv.h :
+ /home/jean/personal/learn/doctor/hevc/trunk/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComSlice.h :
+ /home/jean/personal/learn/doctor/hevc/trunk/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComList.h :
+ /home/jean/personal/learn/doctor/hevc/trunk/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComChromaFormat.h :
+ /home/jean/personal/learn/doctor/hevc/trunk/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComRectangle.h :
+ /home/jean/personal/learn/doctor/hevc/trunk/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/ContextTables.h :
+ /home/jean/personal/learn/doctor/hevc/trunk/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/Debug.h :
+ /home/jean/personal/learn/doctor/hevc/trunk/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/CommonDef.h :
+ /home/jean/personal/learn/doctor/hevc/trunk/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComRdCost.h :
+ /home/jean/personal/learn/doctor/hevc/trunk/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComPattern.h :
+ /home/jean/personal/learn/doctor/hevc/trunk/build/linux/lib/TLibCommon/../../../../source/Lib/TLibCommon/TComRdCostWeightPrediction.h :

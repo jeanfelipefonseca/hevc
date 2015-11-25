@@ -1,0 +1,5 @@
+<map id="TComSampleAdaptiveOffset::xPCMRestoration" name="TComSampleAdaptiveOffset::xPCMRestoration">
+<area shape="rect" id="node2" href="$classTComSampleAdaptiveOffset.html#a64607aac63f53c0c2a8ef083a7cb97a4" title="TComSampleAdaptiveOffset\l::xPCMCURestoration" alt="" coords="243,5,432,46"/>
+<area shape="rect" id="node3" href="$classTComDataCU.html#a619f38785603bab6b072cfd7b525c40e" title="TComDataCU::isLosslessCoded" alt="" coords="718,12,933,39"/>
+<area shape="rect" id="node4" href="$classTComSampleAdaptiveOffset.html#a3051d1ba9e192dbc222906db2f6a4430" title="TComSampleAdaptiveOffset\l::xPCMSampleRestoration" alt="" coords="480,34,669,75"/>
+</map>

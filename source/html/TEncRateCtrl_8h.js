@@ -1,0 +1,25 @@
+var TEncRateCtrl_8h =
+[
+    [ "TRCLCU", "structTRCLCU.html", "structTRCLCU" ],
+    [ "TRCParameter", "structTRCParameter.html", "structTRCParameter" ],
+    [ "TEncRCSeq", "classTEncRCSeq.html", "classTEncRCSeq" ],
+    [ "TEncRCGOP", "classTEncRCGOP.html", "classTEncRCGOP" ],
+    [ "TEncRCPic", "classTEncRCPic.html", "classTEncRCPic" ],
+    [ "TEncRateCtrl", "classTEncRateCtrl.html", "classTEncRateCtrl" ],
+    [ "ALPHA", "TEncRateCtrl_8h.html#af5abd28c44c29b7397c84f1fec4b1d84", null ],
+    [ "BETA1", "TEncRateCtrl_8h.html#a3c0b9279f3bb789b4f5723b3c17eaf0c", null ],
+    [ "BETA2", "TEncRateCtrl_8h.html#a5e33e4ef7e5a5f5f8565818d698301ae", null ],
+    [ "g_RCAlphaMaxValue", "TEncRateCtrl_8h.html#a281c038a18c578207826240836c924d7", null ],
+    [ "g_RCAlphaMinValue", "TEncRateCtrl_8h.html#a1f7c0ce941712ad0c29efd0de0cd2d08", null ],
+    [ "g_RCBetaMaxValue", "TEncRateCtrl_8h.html#a3496fdd37e8d094f3050c7188b2acbe7", null ],
+    [ "g_RCBetaMinValue", "TEncRateCtrl_8h.html#ae33dd4507b2792b4d43837324688495d", null ],
+    [ "g_RCInvalidQPValue", "TEncRateCtrl_8h.html#a84166eddc7c79a054a40fde3185fb960", null ],
+    [ "g_RCIterationNum", "TEncRateCtrl_8h.html#a9c168590ee6dd2831889e6dab1b72ed4", null ],
+    [ "g_RCLCUSmoothWindowSize", "TEncRateCtrl_8h.html#a7f97a136b4dc6634529a78930ca30c00", null ],
+    [ "g_RCMaxPicListSize", "TEncRateCtrl_8h.html#a2d778edef8a56eb6beea1d0af937ce1a", null ],
+    [ "g_RCSmoothWindowSize", "TEncRateCtrl_8h.html#a6837cc184a4f840943bcfcc1ed5c9e0f", null ],
+    [ "g_RCWeightCurrentLambda", "TEncRateCtrl_8h.html#a266582f07efafd2b84e080871dad0c6a", null ],
+    [ "g_RCWeightHistoryLambda", "TEncRateCtrl_8h.html#a968d6fd129f36acb8d90c90209440538", null ],
+    [ "g_RCWeightPicRargetBitInBuffer", "TEncRateCtrl_8h.html#a474365ac3b5d3c370d08c1484c374008", null ],
+    [ "g_RCWeightPicTargetBitInGOP", "TEncRateCtrl_8h.html#a51c378de110b1efaf7a36e423979087c", null ]
+];

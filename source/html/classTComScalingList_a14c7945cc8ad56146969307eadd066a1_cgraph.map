@@ -1,0 +1,6 @@
+<map id="TComScalingList::setDefaultScalingList" name="TComScalingList::setDefaultScalingList">
+<area shape="rect" id="node2" href="$classTComScalingList.html#a97e70eaa265724a81a202c2a38b9d879" title="TComScalingList::process\lDefaultMatrix" alt="" coords="245,70,421,111"/>
+<area shape="rect" id="node3" href="$classTComScalingList.html#aa6f051c260f447d9f98a985565fc59dd" title="get matrix coefficient " alt="" coords="470,5,661,46"/>
+<area shape="rect" id="node4" href="$classTComScalingList.html#a350f921a49148b73860de67d57ddd51b" title="get default matrix coefficient " alt="" coords="470,70,661,111"/>
+<area shape="rect" id="node5" href="$classTComScalingList.html#a45adf1f6d369d5251b72fc8b7a9d6515" title="set DC value " alt="" coords="470,135,661,177"/>
+</map>

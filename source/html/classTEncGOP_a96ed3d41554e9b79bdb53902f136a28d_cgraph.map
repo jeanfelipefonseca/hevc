@@ -1,0 +1,7 @@
+<map id="TEncGOP::xAttachSliceDataToNalUnit" name="TEncGOP::xAttachSliceDataToNalUnit">
+<area shape="rect" id="node2" href="$classTComOutputBitstream.html#a5ca5ebaf49235a82858295b91a17f67a" title="TComOutputBitstream\l::getNumberOfWrittenBits" alt="" coords="448,5,621,46"/>
+<area shape="rect" id="node3" href="$classTComOutputBitstream.html#ad6e51419b95e94857b333cf1f5c997c9" title="TComOutputBitstream\l::addSubstream" alt="" coords="246,69,399,110"/>
+<area shape="rect" id="node6" href="$classTComOutputBitstream.html#a7eef394424aa099a7e93a184163620de" title="TComOutputBitstream\l::clear" alt="" coords="246,134,399,175"/>
+<area shape="rect" id="node4" href="$classTComOutputBitstream.html#aba619d657e7772f3736a15d4d03706d6" title="TComOutputBitstream\l::getFIFO" alt="" coords="458,70,611,111"/>
+<area shape="rect" id="node5" href="$classTComOutputBitstream.html#a804f4dcb6c5182a8d360d68ac849a85a" title="TComOutputBitstream\l::write" alt="" coords="458,135,611,177"/>
+</map>

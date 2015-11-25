@@ -1,0 +1,6 @@
+<map id="TComDataCU::xAddMVPCandOrder" name="TComDataCU::xAddMVPCandOrder">
+<area shape="rect" id="node2" href="$classTComDataCU.html#a73122becdd4eacc34ff5b6291be2964d" title="returns CU and part index of the PU above the top row of the current uiCurrPartUnitIdx of the CU..." alt="" coords="291,5,509,32"/>
+<area shape="rect" id="node3" href="$classTComDataCU.html#a5d26034f157dde7d548bb5d6c3b43c1a" title="returns CU and part index of the PU left of the lefthand column of the current uiCurrPartUnitIdx of t..." alt="" coords="295,56,505,83"/>
+<area shape="rect" id="node4" href="$classTComDataCU.html#a19bd58bf3871a2bcfb5633cdae578d10" title="compute scaling factor from POC difference " alt="" coords="301,107,499,149"/>
+<area shape="rect" id="node5" href="$CommonDef_8h.html#a9d440463d25db297a7ef3276b29e0606" title="general min/max clip " alt="" coords="558,115,610,141"/>
+</map>

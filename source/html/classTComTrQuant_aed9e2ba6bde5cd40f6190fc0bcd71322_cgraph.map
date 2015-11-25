@@ -1,0 +1,12 @@
+<map id="TComTrQuant::setScalingList" name="TComTrQuant::setScalingList">
+<area shape="rect" id="node2" href="$classTComTrQuant.html#a9d5822af574f183c893b6ea060027fbf" title="TComTrQuant::xSetScaling\lListEnc" alt="" coords="249,217,431,258"/>
+<area shape="rect" id="node7" href="$classTComTrQuant.html#a27d473a108b43a8826fa966df8adb8de" title="TComTrQuant::xSetScaling\lListDec" alt="" coords="249,122,431,163"/>
+<area shape="rect" id="node10" href="$classTComTrQuant.html#aeffe0e7e8256286a627f9442c1b425db" title="TComTrQuant::setErrScale\lCoeff" alt="" coords="249,311,431,353"/>
+<area shape="rect" id="node3" href="$classTComScalingList.html#aa6f051c260f447d9f98a985565fc59dd" title="get matrix coefficient " alt="" coords="491,187,682,229"/>
+<area shape="rect" id="node4" href="$classTComTrQuant.html#a1c0a4819a45dc37a69b2ea3cc63323db" title="get Error Scale Coefficent " alt="" coords="487,319,686,345"/>
+<area shape="rect" id="node5" href="$classTComTrQuant.html#abbafcefed9e54ca6236a8d24540ebeec" title="TComTrQuant::processScaling\lListEnc" alt="" coords="485,253,688,294"/>
+<area shape="rect" id="node6" href="$classTComScalingList.html#a10c1647d9e2e904bb49e5cf6a06d0d3c" title="get DC value " alt="" coords="491,122,682,163"/>
+<area shape="rect" id="node8" href="$classTComTrQuant.html#ad7a885d13dbbad93bb0c41a885041732" title="get Quant Coefficent " alt="" coords="481,71,693,97"/>
+<area shape="rect" id="node9" href="$classTComTrQuant.html#a660cb31f22773b50f551682135e3f70d" title="TComTrQuant::processScaling\lListDec" alt="" coords="485,5,688,46"/>
+<area shape="rect" id="node11" href="$classTComTrQuant.html#a4b0086105317f9d1198af88a482dd253" title="get Error Scale Coefficent " alt="" coords="496,370,677,411"/>
+</map>

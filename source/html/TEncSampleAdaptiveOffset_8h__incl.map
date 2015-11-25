@@ -1,0 +1,35 @@
+<map id="Lib/TLibEncoder/TEncSampleAdaptiveOffset.h" name="Lib/TLibEncoder/TEncSampleAdaptiveOffset.h">
+<area shape="rect" id="node2" href="$TComSampleAdaptiveOffset_8h.html" title="sample adaptive offset class (header) " alt="" coords="2227,246,2460,287"/>
+<area shape="rect" id="node9" href="$TComPic_8h.html" title="picture class (header) " alt="" coords="2449,336,2537,363"/>
+<area shape="rect" id="node41" href="$TEncEntropy_8h.html" title="entropy encoder class (header) " alt="" coords="2212,171,2321,197"/>
+<area shape="rect" id="node45" href="$TEncSbac_8h.html" title="Context&#45;adaptive entropy encoder class (header) " alt="" coords="2685,96,2779,123"/>
+<area shape="rect" id="node50" href="$TComBitCounter_8h.html" title="Class for counting bits (header) " alt="" coords="2973,171,3187,197"/>
+<area shape="rect" id="node3" href="$CommonDef_8h.html" title="Defines version information, constants and small in&#45;line functions. " alt="" coords="1481,875,1588,901"/>
+<area shape="rect" id="node7" href="$TypeDef_8h.html" title="Define macros, basic types, new types and enumerations. " alt="" coords="1349,949,1431,976"/>
+<area shape="rect" id="node10" href="$TComPicSym_8h.html" title="picture symbol class (header) " alt="" coords="1448,411,1563,437"/>
+<area shape="rect" id="node35" href="$TComPicYuv_8h.html" title="picture YUV buffer class (header) " alt="" coords="1169,643,1279,669"/>
+<area shape="rect" id="node40" href="$TComBitStream_8h.html" title="class for handling bitstream (header) " alt="" coords="2801,725,2927,752"/>
+<area shape="rect" id="node12" href="$TComSlice_8h.html" title="slice header and SPS class (header) " alt="" coords="1355,643,1453,669"/>
+<area shape="rect" id="node28" href="$TComDataCU_8h.html" title="CU data structure (header) " alt="" coords="1609,485,1725,512"/>
+<area shape="rect" id="node15" href="$TComRom_8h.html" title="global variables &amp; functions (header) " alt="" coords="1371,800,1468,827"/>
+<area shape="rect" id="node17" href="$TComList_8h.html" title="general list class (header) " alt="" coords="867,800,957,827"/>
+<area shape="rect" id="node20" href="$TComChromaFormat_8h_source.html" title="TComChromaFormat.h" alt="" coords="589,725,744,752"/>
+<area shape="rect" id="node21" href="$TComRectangle_8h_source.html" title="TComRectangle.h" alt="" coords="187,800,315,827"/>
+<area shape="rect" id="node22" href="$ContextTables_8h.html" title="Defines constants and tables for SBAC. " alt="" coords="43,800,161,827"/>
+<area shape="rect" id="node23" href="$Debug_8h.html" title="Defines types and objects for environment&#45;variable&#45;based debugging and feature control. " alt="" coords="390,800,460,827"/>
+<area shape="rect" id="node29" href="$TComMotionInfo_8h.html" title="motion information handling classes (header) " alt="" coords="1917,643,2047,669"/>
+<area shape="rect" id="node32" href="$TComRdCost_8h.html" title="RD cost computation classes (header) " alt="" coords="1679,560,1793,587"/>
+<area shape="rect" id="node33" href="$TComPattern_8h.html" title="neighbouring pixel access classes (header) " alt="" coords="2073,643,2183,669"/>
+<area shape="rect" id="node31" href="$TComMv_8h.html" title="motion vector class (header) " alt="" coords="1697,725,1783,752"/>
+<area shape="rect" id="node34" href="$TComRdCostWeightPrediction_8h.html" title="RD cost computation namespace (header) " alt="" coords="1579,643,1792,669"/>
+<area shape="rect" id="node36" href="$SEI_8h_source.html" title="SEI.h" alt="" coords="827,725,881,752"/>
+<area shape="rect" id="node37" href="$MD5_8h_source.html" title="libmd5/MD5.h" alt="" coords="587,800,689,827"/>
+<area shape="rect" id="node38" href="$libmd5_8h_source.html" title="libmd5.h" alt="" coords="718,875,788,901"/>
+<area shape="rect" id="node42" href="$ContextModel_8h.html" title="context model class (header) " alt="" coords="2065,725,2260,752"/>
+<area shape="rect" id="node43" href="$TComTrQuant_8h.html" title="transform and quantization class (header) " alt="" coords="971,411,1169,437"/>
+<area shape="rect" id="node44" href="$TComYuv_8h.html" title="general YUV buffer class (header) " alt="" coords="959,560,1051,587"/>
+<area shape="rect" id="node46" href="$ContextModel3DBuffer_8h.html" title="context model 3D buffer class (header) " alt="" coords="2360,635,2552,677"/>
+<area shape="rect" id="node47" href="$TEncBinCoder_8h.html" title="binary entropy encoder interface " alt="" coords="2678,643,2796,669"/>
+<area shape="rect" id="node48" href="$TEncBinCoderCABAC_8h.html" title="binary entropy encoder of CABAC " alt="" coords="2531,560,2695,587"/>
+<area shape="rect" id="node49" href="$TComCABACTables_8h.html" title="static class for CABAC tables " alt="" coords="2285,725,2521,752"/>
+</map>

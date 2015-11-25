@@ -1,0 +1,11 @@
+<map id="Lib/TLibEncoder/TEncGOP.h" name="Lib/TLibEncoder/TEncGOP.h">
+<area shape="rect" id="node2" href="$TEncTop_8h.html" title="encoder class (header) " alt="" coords="483,80,667,107"/>
+<area shape="rect" id="node7" href="$TEncGOP_8cpp.html" title="GOP encoder class. " alt="" coords="5,155,211,181"/>
+<area shape="rect" id="node3" href="$TAppEncTop_8h.html" title="Encoder application class (header) " alt="" coords="235,155,453,181"/>
+<area shape="rect" id="node6" href="$TEncCu_8cpp.html" title="Coding Unit (CU) encoder class. " alt="" coords="478,155,671,181"/>
+<area shape="rect" id="node8" href="$TEncSbac_8cpp.html" title="SBAC encoder class. " alt="" coords="695,155,901,181"/>
+<area shape="rect" id="node9" href="$TEncSlice_8cpp.html" title="slice encoder class " alt="" coords="927,155,1132,181"/>
+<area shape="rect" id="node10" href="$TEncTop_8cpp.html" title="encoder class " alt="" coords="1157,155,1355,181"/>
+<area shape="rect" id="node4" href="$encmain_8cpp.html" title="Encoder application main. " alt="" coords="119,229,325,256"/>
+<area shape="rect" id="node5" href="$TAppEncTop_8cpp.html" title="Encoder application class. " alt="" coords="350,229,583,256"/>
+</map>

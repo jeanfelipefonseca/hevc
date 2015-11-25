@@ -1,0 +1,13 @@
+<map id="TEncSlice::precompressSlice" name="TEncSlice::precompressSlice">
+<area shape="rect" id="node2" href="$classTEncSlice.html#ae2a0de7e3f92ebb669fd50116bf1bbf6" title="analysis stage of slice " alt="" coords="248,289,424,316"/>
+<area shape="rect" id="node3" href="$classTEncSlice.html#aa0d1a1bbc6f94db1bd7f5bd13e1a7c82" title="TEncSlice::xDetermineStart\lAndBoundingCtuTsAddr" alt="" coords="473,5,658,46"/>
+<area shape="rect" id="node4" href="$classWeightPredAnalysis.html#a6c76239d875ad77ca7385ce01493a03f" title="calculate AC and DC values for current original image " alt="" coords="480,70,651,111"/>
+<area shape="rect" id="node5" href="$classWeightPredAnalysis.html#aa837cf4f910e7da5e319bda8f0dee552" title="estimate wp tables for explicit wp " alt="" coords="476,135,655,177"/>
+<area shape="rect" id="node6" href="$classTComSlice.html#ac4de3215f281148d77927bd3aece4bd6" title="init WP table " alt="" coords="478,201,653,228"/>
+<area shape="rect" id="node7" href="$classWeightPredAnalysis.html#ac1dc525942f25d505ca5cd58de774a2b" title="check weighted pred or non&#45;weighted pred " alt="" coords="495,253,635,294"/>
+<area shape="rect" id="node8" href="$classTComDataCU.html#ad5fda1e6ae341e2bbe617a4a1743b72e" title="TComDataCU::initCtu" alt="" coords="489,319,641,345"/>
+<area shape="rect" id="node9" href="$CommonDef_8h.html#a9d440463d25db297a7ef3276b29e0606" title="general min/max clip " alt="" coords="539,369,591,396"/>
+<area shape="rect" id="node10" href="$classTEncCu.html#ac1a4066045edd61e746102f565187a42" title="CTU analysis function. " alt="" coords="487,420,643,447"/>
+<area shape="rect" id="node11" href="$classTEncCu.html#af0b1c36fb5ec87c5bf26e3c5c4d5ab95" title="CTU encoding function. " alt="" coords="495,471,636,497"/>
+<area shape="rect" id="node12" href="$classTComDataCU.html#aae8959f0ffe49f618c97084722b279cf" title="returns true, if the partiton is skipped " alt="" coords="480,521,651,548"/>
+</map>

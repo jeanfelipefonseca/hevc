@@ -1,0 +1,12 @@
+<map id="Lib/TLibDecoder/SyntaxElementParser.h" name="Lib/TLibDecoder/SyntaxElementParser.h">
+<area shape="rect" id="node2" href="$SEIread_8cpp.html" title="reading funtionality for SEI messages " alt="" coords="5,104,197,131"/>
+<area shape="rect" id="node3" href="$SyntaxElementParser_8cpp.html" title="Parsing functionality high level syntax. " alt="" coords="223,97,432,138"/>
+<area shape="rect" id="node4" href="$TDecCAVLC_8h.html" title="CAVLC decoder class (header) " alt="" coords="458,104,667,131"/>
+<area shape="rect" id="node5" href="$TDecCAVLC_8cpp.html" title="CAVLC decoder class. " alt="" coords="214,187,436,213"/>
+<area shape="rect" id="node6" href="$TDecGop_8cpp.html" title="GOP decoder class. " alt="" coords="461,187,664,213"/>
+<area shape="rect" id="node7" href="$TDecTop_8h.html" title="decoder class (header) " alt="" coords="688,187,875,213"/>
+<area shape="rect" id="node8" href="$TAppDecTop_8h.html" title="Decoder application class (header) " alt="" coords="553,261,775,288"/>
+<area shape="rect" id="node11" href="$TDecTop_8cpp.html" title="decoder class " alt="" coords="799,261,997,288"/>
+<area shape="rect" id="node9" href="$decmain_8cpp.html" title="Decoder application main. " alt="" coords="438,336,644,363"/>
+<area shape="rect" id="node10" href="$TAppDecTop_8cpp.html" title="Decoder application class. " alt="" coords="669,336,903,363"/>
+</map>

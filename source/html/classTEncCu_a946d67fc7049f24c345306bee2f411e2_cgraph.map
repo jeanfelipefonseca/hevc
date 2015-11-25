@@ -1,0 +1,9 @@
+<map id="TEncCu::xCompressCU" name="TEncCu::xCompressCU">
+<area shape="rect" id="node2" href="$CommonDef_8h.html#a9d440463d25db297a7ef3276b29e0606" title="general min/max clip " alt="" coords="301,5,353,32"/>
+<area shape="rect" id="node3" href="$classTComDataCU.html#aedc8736217f3c4bb6056748fe57f932f" title="TComDataCU::initEstData" alt="" coords="237,56,416,83"/>
+<area shape="rect" id="node4" href="$classTComDataCU.html#a619f38785603bab6b072cfd7b525c40e" title="TComDataCU::isLosslessCoded" alt="" coords="219,107,434,133"/>
+<area shape="rect" id="node5" href="$classTComDataCU.html#aae8959f0ffe49f618c97084722b279cf" title="returns true, if the partiton is skipped " alt="" coords="241,157,412,184"/>
+<area shape="rect" id="node6" href="$classTComDataCU.html#a356485927da2c2e2228e7e536498ec8d" title="TComDataCU::getRefQP" alt="" coords="241,208,413,235"/>
+<area shape="rect" id="node7" href="$classTComDataCU.html#ace24db6c00e9bb01c9e9ebee74476c77" title="TComDataCU::getQpMinCuLeft" alt="" coords="490,183,699,209"/>
+<area shape="rect" id="node8" href="$classTComDataCU.html#a328ce25c6b0fc3d1cc7e3dfabe26bc25" title="TComDataCU::getQpMinCuAbove" alt="" coords="483,233,707,260"/>
+</map>

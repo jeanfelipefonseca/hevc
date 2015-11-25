@@ -1,0 +1,7 @@
+<map id="TComTrQuant::setScalingListDec" name="TComTrQuant::setScalingListDec">
+<area shape="rect" id="node2" href="$classTComTrQuant.html#a27d473a108b43a8826fa966df8adb8de" title="TComTrQuant::xSetScaling\lListDec" alt="" coords="273,93,455,134"/>
+<area shape="rect" id="node3" href="$classTComScalingList.html#aa6f051c260f447d9f98a985565fc59dd" title="get matrix coefficient " alt="" coords="515,5,706,46"/>
+<area shape="rect" id="node4" href="$classTComTrQuant.html#ad7a885d13dbbad93bb0c41a885041732" title="get Quant Coefficent " alt="" coords="505,71,717,97"/>
+<area shape="rect" id="node5" href="$classTComTrQuant.html#a660cb31f22773b50f551682135e3f70d" title="TComTrQuant::processScaling\lListDec" alt="" coords="509,122,712,163"/>
+<area shape="rect" id="node6" href="$classTComScalingList.html#a10c1647d9e2e904bb49e5cf6a06d0d3c" title="get DC value " alt="" coords="515,187,706,229"/>
+</map>
