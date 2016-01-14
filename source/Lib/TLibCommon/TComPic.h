@@ -38,6 +38,9 @@
 #ifndef __TCOMPIC__
 #define __TCOMPIC__
 
+//#include <iostream>
+//#include <fstream>
+
 // Include files
 #include "CommonDef.h"
 #include "TComPicSym.h"
@@ -81,6 +84,9 @@ private:
 
   SEIMessages  m_SEIs; ///< Any SEI messages that have been received.  If !NULL we own the object.
 
+  //mhevc
+  //ofstream m_arrf;
+
 public:
   TComPic();
   virtual ~TComPic();
@@ -88,6 +94,8 @@ public:
   Void          create( const TComSPS &sps, const TComPPS &pps, const Bool bIsVirtual /*= false*/ );
 
   virtual Void  destroy();
+
+  //std::ostream& getOfstream(){ return m_arrf; }
 
   UInt          getTLayer() const               { return m_uiTLayer;   }
   Void          setTLayer( UInt uiTLayer ) { m_uiTLayer = uiTLayer; }

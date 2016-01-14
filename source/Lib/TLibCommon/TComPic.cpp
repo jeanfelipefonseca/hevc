@@ -104,6 +104,8 @@ Void TComPic::destroy()
       m_apcPicYuv[i]  = NULL;
     }
   }
+  //mhevc
+  //m_arrf.close();
 
   deleteSEIs(m_SEIs);
 }
