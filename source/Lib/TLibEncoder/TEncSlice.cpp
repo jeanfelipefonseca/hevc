@@ -913,6 +913,9 @@ Void TEncSlice::compressSlice( TComPic* pcPic, const Bool bCompressEntireSlice, 
     m_uiPicTotalBits += pCtu->getTotalBits();
     m_dPicRdCost     += pCtu->getTotalCost();
     m_uiPicDist      += pCtu->getTotalDistortion();
+
+    //pCtu->getPic()->getOfstream() << pCtu->getCUPelX() << "," << pCtu->getCUPelY() << "," <<
+    //		m_uiPicTotalBits << "," << m_dPicRdCost << "," << m_uiPicDist << "," << pCtu->getSkipFlag() << std::endl;
   }
 
   // store context state at the end of this slice-segment, in case the next slice is a dependent slice and continues using the CABAC contexts.
