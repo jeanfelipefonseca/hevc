@@ -88,6 +88,7 @@ Void TEncTop::create ()
 {
   // initialize global variables
   initROM();
+  //m_arrf.open("arrf.out", ios::out); //mhevc
 
   // create processing unit classes
   m_cGOPEncoder.        create( );
@@ -153,6 +154,7 @@ Void TEncTop::destroy ()
   m_cLoopFilter.        destroy();
   m_cRateCtrl.          destroy();
   m_cSearch.            destroy();
+  //m_arrf.				close()
   Int iDepth;
   for ( iDepth = 0; iDepth < m_maxTotalCUDepth+1; iDepth++ )
   {
