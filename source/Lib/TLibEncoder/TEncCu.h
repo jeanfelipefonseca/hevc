@@ -98,6 +98,10 @@ private:
   TEncSbac*               m_pcRDGoOnSbacCoder;
   TEncRateCtrl*           m_pcRateCtrl;
 
+  //mhevc
+  Int					  mhevc_countInter;
+  Int					  mhevc_countIntra;
+
 public:
   /// copy parameters from encoder class
   Void  init                ( TEncTop* pcEncTop );

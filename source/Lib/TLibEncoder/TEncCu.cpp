@@ -217,6 +217,7 @@ Void TEncCu::init( TEncTop* pcEncTop )
   m_pcRDGoOnSbacCoder  = pcEncTop->getRDGoOnSbacCoder();
 
   m_pcRateCtrl         = pcEncTop->getRateCtrl();
+
 }
 
 // ====================================================================================================================
@@ -237,6 +238,25 @@ Void TEncCu::compressCtu( TComDataCU* pCtu )
 
   xCompressCU( m_ppcBestCU[0], m_ppcTempCU[0], 0 DEBUG_STRING_PASS_INTO(sDebug) );
   DEBUG_STRING_OUTPUT(std::cout, sDebug)
+
+  m_pcEncCfg->getOfstream() << m_ppcBestCU[0]->getTotalCost() << ","
+  		                    << m_ppcBestCU[0]->getCUPelX() << ","
+  		                    << m_ppcBestCU[0]->getCUPelY() << ","
+  		                    << m_ppcBestCU[0]->getCtuRsAddr() << ","
+  		                    << m_ppcBestCU[0]->getTotalBits() << ","
+  		                    << m_ppcBestCU[0]->getTotalDistortion() << ","
+//  		                    << m_ppcBestCU[0]->getCtuAbove()->getTotalCost() << ","
+//  		                    << m_ppcBestCU[0]->getCtuAbove()->getSkipFlag(0) << ","
+//  		                    << m_ppcBestCU[0]->getCtuAboveLeft()->getTotalCost() << ","
+//  		                    << m_ppcBestCU[0]->getCtuAboveRight()->getTotalCost() << ","
+//  		                    << m_ppcBestCU[0]->getCtuLeft()->getTotalCost() << ","
+  		                    << m_ppcBestCU[0]->getMergeAMP() << ","
+  		                    << m_ppcBestCU[0]->getQP(0) << ","
+  		                    << m_ppcBestCU[0]->getQP(1) << ","
+  		                    << m_ppcBestCU[0]->getWidth(0) << ","
+  		                    << m_ppcBestCU[0]->getHeight(0) << ","
+  		                    << m_ppcBestCU[0]->getSkipFlag(0)
+  		                    << std::endl;
 
 #if ADAPTIVE_QP_SELECTION
   if( m_pcEncCfg->getUseAdaptQpSelect() )
@@ -357,6 +377,7 @@ Void TEncCu::xCompressCU( TComDataCU*& rpcBestCU, TComDataCU*& rpcTempCU, const 
   const TComPPS &pps=*(rpcTempCU->getSlice()->getPPS());
   const TComSPS &sps=*(rpcTempCU->getSlice()->getSPS());
   
+
   // These are only used if getFastDeltaQp() is true
   const UInt fastDeltaQPCuMaxSize    = Clip3(sps.getMaxCUHeight()>>sps.getLog2DiffMaxMinCodingBlockSize(), sps.getMaxCUHeight(), 32u);
 
@@ -857,6 +878,19 @@ Void TEncCu::xCompressCU( TComDataCU*& rpcBestCU, TComDataCU*& rpcTempCU, const 
   DEBUG_STRING_APPEND(sDebug_, sDebug);
 
   rpcBestCU->copyToPic(uiDepth);                                                     // Copy Best data to Picture for next partition prediction.
+  //mhevc
+//  m_pcEncCfg->getOfstream() << rpcBestCU->getTotalCost() << ","
+//		                    << rpcBestCU->getCUPelX() << ","
+//		                    << rpcBestCU->getCUPelY() << ","
+//		                    << rpcBestCU->getCtuRsAddr() << ","
+//		                    << rpcBestCU->getTotalBits() << ","
+//		                    << rpcBestCU->getTotalDistortion() << ","
+////		                    << rpcBestCU->getCtuAbove()->getTotalCost() << ","
+////		                    << rpcBestCU->getCtuAboveLeft()->getTotalCost() << ","
+////		                    << rpcBestCU->getCtuAboveRight()->getTotalCost() << ","
+////		                    << rpcBestCU->getCtuLeft()->getTotalCost() << ","
+//		                    << rpcBestCU->getSkipFlag(0)
+//		                    << std::endl;
 
   xCopyYuv2Pic( rpcBestCU->getPic(), rpcBestCU->getCtuRsAddr(), rpcBestCU->getZorderIdxInCtu(), uiDepth, uiDepth );   // Copy Yuv data to picture Yuv
   if (bBoundary)
@@ -1344,6 +1378,9 @@ Void TEncCu::xCheckRDCostIntra( TComDataCU *&rpcBestCU,
 {
   DEBUG_STRING_NEW(sTest)
 
+ //mevc
+ // cout << __PRETTY_FUNCTION__ << endl;
+
   if(getFastDeltaQp())
   {
     const TComSPS &sps=*(rpcTempCU->getSlice()->getSPS());
@@ -1404,6 +1441,8 @@ Void TEncCu::xCheckRDCostIntra( TComDataCU *&rpcBestCU,
   cost = rpcTempCU->getTotalCost();
 
   xCheckBestMode(rpcBestCU, rpcTempCU, uiDepth DEBUG_STRING_PASS_INTO(sDebug) DEBUG_STRING_PASS_INTO(sTest));
+//  cout << "##### X: " << rpcBestCU->getCUPelX() << " Y: " << rpcBestCU->getCUPelY() << endl;
+//  cout << "##### CU Scan order: " << rpcBestCU->getZorderIdxInCtu() << "// Intra cost iterations: " << mhevc_countIntra++ << endl;
 }
 
 
@@ -1495,7 +1534,8 @@ Void TEncCu::xCheckBestMode( TComDataCU*& rpcBestCU, TComDataCU*& rpcTempCU, UIn
 
     // store temp best CI for next CU coding
     m_pppcRDSbacCoder[uiDepth][CI_TEMP_BEST]->store(m_pppcRDSbacCoder[uiDepth][CI_NEXT_BEST]);
-
+    //mhevc
+    //check how many times this checking has being done.
 
 #if DEBUG_STRING
     DEBUG_STRING_SWAP(sParent, sTest)
