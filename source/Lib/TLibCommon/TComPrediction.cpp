@@ -90,8 +90,8 @@ TComPrediction::~TComPrediction()
 
 Void TComPrediction::destroy()
 {
-	// JEAN: more verbose
-	printf("%s\n", __PRETTY_FUNCTION__);
+	// mhevc: more verbose
+	// printf("%s\n", __PRETTY_FUNCTION__);
   for(UInt ch=0; ch<MAX_NUM_COMPONENT; ch++)
   {
     for(UInt buf=0; buf<NUM_PRED_BUF; buf++)
@@ -127,8 +127,8 @@ Void TComPrediction::destroy()
 
 Void TComPrediction::initTempBuff(ChromaFormat chromaFormatIDC)
 {
-	// JEAN: more verbose
-		printf("%s\n", __PRETTY_FUNCTION__);
+	// mhevc: more verbose
+	//	printf("%s\n", __PRETTY_FUNCTION__);
   // if it has been initialised before, but the chroma format has changed, release the memory and start again.
   if( m_piYuvExt[COMPONENT_Y][PRED_BUF_UNFILTERED] != NULL && m_cYuvPredTemp.getChromaFormat()!=chromaFormatIDC)
   {
@@ -186,8 +186,8 @@ Void TComPrediction::initTempBuff(ChromaFormat chromaFormatIDC)
 //NOTE: Bit-Limit - 25-bit source
 Pel TComPrediction::predIntraGetPredValDC( const Pel* pSrc, Int iSrcStride, UInt iWidth, UInt iHeight)
 {
-	// JEAN: more verbose
-		printf("%s\n", __PRETTY_FUNCTION__);
+	// mhevc: more verbose
+	//	printf("%s\n", __PRETTY_FUNCTION__);
   assert(iWidth > 0 && iHeight > 0);
   Int iInd, iSum = 0;
   Pel pDcVal;
@@ -240,7 +240,7 @@ Void TComPrediction::xPredIntraAng(       Int bitDepth,
                                   )
 {
 	// JEAN: more verbose
-		printf("%s\n", __PRETTY_FUNCTION__);
+//		printf("%s\n", __PRETTY_FUNCTION__);
   Int width=Int(uiWidth);
   Int height=Int(uiHeight);
 
@@ -398,7 +398,7 @@ Void TComPrediction::xPredIntraAng(       Int bitDepth,
 Void TComPrediction::predIntraAng( const ComponentID compID, UInt uiDirMode, Pel* piOrg /* Will be null for decoding */, UInt uiOrgStride, Pel* piPred, UInt uiStride, TComTU &rTu, const Bool bUseFilteredPredSamples, const Bool bUseLosslessDPCM )
 {
 	// JEAN: more verbose
-		printf("%s\n", __PRETTY_FUNCTION__);
+//		printf("%s\n", __PRETTY_FUNCTION__);
   const ChannelType    channelType = toChannelType(compID);
   const TComRectangle &rect        = rTu.getRect(isLuma(compID) ? COMPONENT_Y : COMPONENT_Cb);
   const Int            iWidth      = rect.width;
@@ -488,7 +488,7 @@ Void TComPrediction::predIntraAng( const ComponentID compID, UInt uiDirMode, Pel
 Bool TComPrediction::xCheckIdenticalMotion ( TComDataCU* pcCU, UInt PartAddr )
 {
 	// JEAN: more verbose
-		printf("%s\n", __PRETTY_FUNCTION__);
+//		printf("%s\n", __PRETTY_FUNCTION__);
   if( pcCU->getSlice()->isInterB() && !pcCU->getSlice()->getPPS()->getWPBiPred() )
   {
     if( pcCU->getCUMvField(REF_PIC_LIST_0)->getRefIdx(PartAddr) >= 0 && pcCU->getCUMvField(REF_PIC_LIST_1)->getRefIdx(PartAddr) >= 0)
@@ -507,7 +507,7 @@ Bool TComPrediction::xCheckIdenticalMotion ( TComDataCU* pcCU, UInt PartAddr )
 Void TComPrediction::motionCompensation ( TComDataCU* pcCU, TComYuv* pcYuvPred, RefPicList eRefPicList, Int iPartIdx )
 {
 	// JEAN: more verbose
-		printf("%s\n", __PRETTY_FUNCTION__);
+	//	printf("%s\n", __PRETTY_FUNCTION__);
   Int         iWidth;
   Int         iHeight;
   UInt        uiPartAddr;
@@ -577,8 +577,7 @@ Void TComPrediction::motionCompensation ( TComDataCU* pcCU, TComYuv* pcYuvPred, 
 
 Void TComPrediction::xPredInterUni ( TComDataCU* pcCU, UInt uiPartAddr, Int iWidth, Int iHeight, RefPicList eRefPicList, TComYuv* pcYuvPred, Bool bi )
 {
-	// JEAN: more verbose
-		printf("%s\n", __PRETTY_FUNCTION__);
+
   Int         iRefIdx     = pcCU->getCUMvField( eRefPicList )->getRefIdx( uiPartAddr );           assert (iRefIdx >= 0);
   TComMv      cMv         = pcCU->getCUMvField( eRefPicList )->getMv( uiPartAddr );
   pcCU->clipMv(cMv);
@@ -593,7 +592,7 @@ Void TComPrediction::xPredInterUni ( TComDataCU* pcCU, UInt uiPartAddr, Int iWid
 Void TComPrediction::xPredInterBi ( TComDataCU* pcCU, UInt uiPartAddr, Int iWidth, Int iHeight, TComYuv* pcYuvPred )
 {
 	// JEAN: more verbose
-		printf("%s\n", __PRETTY_FUNCTION__);
+	//	printf("%s\n", __PRETTY_FUNCTION__);
   TComYuv* pcMbYuv;
   Int      iRefIdx[NUM_REF_PIC_LIST_01] = {-1, -1};
 
@@ -660,8 +659,8 @@ Void TComPrediction::xPredInterBi ( TComDataCU* pcCU, UInt uiPartAddr, Int iWidt
 
 Void TComPrediction::xPredInterBlk(const ComponentID compID, TComDataCU *cu, TComPicYuv *refPic, UInt partAddr, TComMv *mv, Int width, Int height, TComYuv *dstPic, Bool bi, const Int bitDepth )
 {
-	// JEAN: more verbose
-		printf("%s\n", __PRETTY_FUNCTION__);
+	// mhevc: more verbose
+	//	printf("%s\n", __PRETTY_FUNCTION__);
   Int     refStride  = refPic->getStride(compID);
   Int     dstStride  = dstPic->getStride(compID);
   Int shiftHor=(2+refPic->getComponentScaleX(compID));
@@ -703,7 +702,7 @@ Void TComPrediction::xPredInterBlk(const ComponentID compID, TComDataCU *cu, TCo
 Void TComPrediction::xWeightedAverage( TComYuv* pcYuvSrc0, TComYuv* pcYuvSrc1, Int iRefIdx0, Int iRefIdx1, UInt uiPartIdx, Int iWidth, Int iHeight, TComYuv* pcYuvDst, const BitDepths &clipBitDepths )
 {
 	// JEAN: more verbose
-		printf("%s\n", __PRETTY_FUNCTION__);
+	//	printf("%s\n", __PRETTY_FUNCTION__);
   if( iRefIdx0 >= 0 && iRefIdx1 >= 0 )
   {
     pcYuvDst->addAvg( pcYuvSrc0, pcYuvSrc1, uiPartIdx, iWidth, iHeight, clipBitDepths );
@@ -755,7 +754,7 @@ Void TComPrediction::getMvPredAMVP( TComDataCU* pcCU, UInt uiPartIdx, UInt uiPar
 Void TComPrediction::xPredIntraPlanar( const Pel* pSrc, Int srcStride, Pel* rpDst, Int dstStride, UInt width, UInt height )
 {
 	// JEAN: more verbose
-		printf("%s\n", __PRETTY_FUNCTION__);
+//		printf("%s\n", __PRETTY_FUNCTION__);
   assert(width <= height);
 
   Int leftColumn[MAX_CU_SIZE+1], topRow[MAX_CU_SIZE+1], bottomRow[MAX_CU_SIZE], rightColumn[MAX_CU_SIZE];
@@ -820,7 +819,7 @@ Void TComPrediction::xPredIntraPlanar( const Pel* pSrc, Int srcStride, Pel* rpDs
 Void TComPrediction::xDCPredFiltering( const Pel* pSrc, Int iSrcStride, Pel* pDst, Int iDstStride, Int iWidth, Int iHeight, ChannelType channelType )
 {
 	// JEAN: more verbose
-		printf("%s\n", __PRETTY_FUNCTION__);
+	//	printf("%s\n", __PRETTY_FUNCTION__);
   Int x, y, iDstStride2, iSrcStride2;
 
   if (isLuma(channelType) && (iWidth <= MAXIMUM_INTRA_FILTERED_WIDTH) && (iHeight <= MAXIMUM_INTRA_FILTERED_HEIGHT))
@@ -848,7 +847,7 @@ Void TComPrediction::xDCPredFiltering( const Pel* pSrc, Int iSrcStride, Pel* pDs
 Bool TComPrediction::UseDPCMForFirstPassIntraEstimation(TComTU &rTu, const UInt uiDirMode)
 {
 	// JEAN: more verbose
-		printf("%s\n", __PRETTY_FUNCTION__);
+//		printf("%s\n", __PRETTY_FUNCTION__);
   return (rTu.getCU()->isRDPCMEnabled(rTu.GetAbsPartIdxTU()) ) &&
           rTu.getCU()->getCUTransquantBypass(rTu.GetAbsPartIdxTU()) &&
           (uiDirMode==HOR_IDX || uiDirMode==VER_IDX);
