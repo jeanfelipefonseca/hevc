@@ -45,6 +45,8 @@
 #include "TLibCommon/CommonDef.h"
 #include "TLibCommon/TComSlice.h"
 #include <assert.h>
+#include <iostream>
+#include <fstream>
 
 struct GOPEntry
 {
@@ -394,17 +396,26 @@ protected:
   std::string m_summaryPicFilenameBase;                       ///< Base filename to use for producing summary picture output files. The actual filenames used will have I.txt, P.txt and B.txt appended.
   UInt        m_summaryVerboseness;                           ///< Specifies the level of the verboseness of the text output.
 
+  //mhevc
+  ofstream 			  m_arrf;                         ///< JEAN: ofstream to write collected data
+
 public:
   TEncCfg()
   : m_tileColumnWidth()
   , m_tileRowHeight()
+  , m_arrf("newarrf.out", ios::out)
   {
     m_PCMBitDepth[CHANNEL_TYPE_LUMA]=8;
     m_PCMBitDepth[CHANNEL_TYPE_CHROMA]=8;
   }
 
   virtual ~TEncCfg()
-  {}
+  {
+	  m_arrf.close();
+  }
+
+  //mhevc: access method to the ofstream member
+  std::ostream& getOfstream(){ return m_arrf; }
 
   Void setProfile(Profile::Name profile) { m_profile = profile; }
   Void setLevel(Level::Tier tier, Level::Name level) { m_levelTier = tier; m_level = level; }
