@@ -41,6 +41,12 @@
 #include "TEncAnalyze.h"
 #include "TLibCommon/Debug.h"
 
+//#include "Eigen/Dense"
+//using namespace Eigen;
+
+#include "budgetedSVM.h"
+#include "bsgd.h"
+
 #include <cmath>
 #include <algorithm>
 using namespace std;
@@ -74,6 +80,16 @@ Void TEncCu::create(UChar uhTotalDepth, UInt uiMaxWidth, UInt uiMaxHeight, Chrom
   m_ppcResiYuvTemp = new TComYuv*[m_uhTotalDepth-1];
   m_ppcRecoYuvTemp = new TComYuv*[m_uhTotalDepth-1];
   m_ppcOrigYuv     = new TComYuv*[m_uhTotalDepth-1];
+
+  parameters param;
+  budgetedData *trainData = NULL;
+  budgetedModelBSGD *model = NULL;
+  model = new budgetedModelBSGD;
+
+  param.ALGORITHM = BSGD;
+  param.DIMENSION = 10;
+  trainData = new budgetedData("blba", param.DIMENSION - (int) (param.BIAS_TERM != 0.0), param.CHUNK_SIZE);
+  trainBSGD(trainData, &param, model);
 
   UInt uiNumPartitions;
   for( i=0 ; i<m_uhTotalDepth-1 ; i++)
