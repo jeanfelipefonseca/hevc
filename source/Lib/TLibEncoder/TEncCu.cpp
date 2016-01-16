@@ -251,10 +251,7 @@ Void TEncCu::compressCtu( TComDataCU* pCtu )
 //  		                    << m_ppcBestCU[0]->getCtuAboveRight()->getTotalCost() << ","
 //  		                    << m_ppcBestCU[0]->getCtuLeft()->getTotalCost() << ","
   		                    << m_ppcBestCU[0]->getMergeAMP() << ","
-  		                    << m_ppcBestCU[0]->getQP(0) << ","
-  		                    << m_ppcBestCU[0]->getQP(1) << ","
-  		                    << m_ppcBestCU[0]->getWidth(0) << ","
-  		                    << m_ppcBestCU[0]->getHeight(0) << ","
+  		                    << sizeof(m_ppcBestCU[0]->getDepth()) << ","
   		                    << m_ppcBestCU[0]->getSkipFlag(0)
   		                    << std::endl;
 
@@ -377,7 +374,7 @@ Void TEncCu::xCompressCU( TComDataCU*& rpcBestCU, TComDataCU*& rpcTempCU, const 
   const TComPPS &pps=*(rpcTempCU->getSlice()->getPPS());
   const TComSPS &sps=*(rpcTempCU->getSlice()->getSPS());
   
-
+  std::cout << "CU Number " << rpcBestCU->getZorderIdxInCtu() << std::endl;
   // These are only used if getFastDeltaQp() is true
   const UInt fastDeltaQPCuMaxSize    = Clip3(sps.getMaxCUHeight()>>sps.getLog2DiffMaxMinCodingBlockSize(), sps.getMaxCUHeight(), 32u);
 
@@ -747,7 +744,8 @@ Void TEncCu::xCompressCU( TComDataCU*& rpcBestCU, TComDataCU*& rpcTempCU, const 
   }
 
   const Bool bSubBranch = bBoundary || !( m_pcEncCfg->getUseEarlyCU() && rpcBestCU->getTotalCost()!=MAX_DOUBLE && rpcBestCU->isSkipped(0) );
-
+  //mhevc
+  UChar		finalDepth = 0;
   if( bSubBranch && uiDepth < sps.getLog2DiffMaxMinCodingBlockSize() && (!getFastDeltaQp() || uiWidth > fastDeltaQPCuMaxSize || bBoundary))
   {
     // further split
@@ -761,7 +759,7 @@ Void TEncCu::xCompressCU( TComDataCU*& rpcBestCU, TComDataCU*& rpcTempCU, const 
       TComDataCU* pcSubBestPartCU     = m_ppcBestCU[uhNextDepth];
       TComDataCU* pcSubTempPartCU     = m_ppcTempCU[uhNextDepth];
       DEBUG_STRING_NEW(sTempDebug)
-
+      std::cout << (int)uhNextDepth << std::endl;
       for ( UInt uiPartUnitIdx = 0; uiPartUnitIdx < 4; uiPartUnitIdx++ )
       {
         pcSubBestPartCU->initSubCU( rpcTempCU, uiPartUnitIdx, uhNextDepth, iQP );           // clear sub partition datas or init.
@@ -871,26 +869,17 @@ Void TEncCu::xCompressCU( TComDataCU*& rpcBestCU, TComDataCU*& rpcTempCU, const 
       }
 
       xCheckBestMode( rpcBestCU, rpcTempCU, uiDepth DEBUG_STRING_PASS_INTO(sDebug) DEBUG_STRING_PASS_INTO(sTempDebug) DEBUG_STRING_PASS_INTO(false) ); // RD compare current larger prediction
-                                                                                                                                                       // with sub partitioned prediction.
+      finalDepth = uhNextDepth;                                                                                                                                                 // with sub partitioned prediction.
     }
   }
 
   DEBUG_STRING_APPEND(sDebug_, sDebug);
 
   rpcBestCU->copyToPic(uiDepth);                                                     // Copy Best data to Picture for next partition prediction.
-  //mhevc
-//  m_pcEncCfg->getOfstream() << rpcBestCU->getTotalCost() << ","
-//		                    << rpcBestCU->getCUPelX() << ","
-//		                    << rpcBestCU->getCUPelY() << ","
-//		                    << rpcBestCU->getCtuRsAddr() << ","
-//		                    << rpcBestCU->getTotalBits() << ","
-//		                    << rpcBestCU->getTotalDistortion() << ","
-////		                    << rpcBestCU->getCtuAbove()->getTotalCost() << ","
-////		                    << rpcBestCU->getCtuAboveLeft()->getTotalCost() << ","
-////		                    << rpcBestCU->getCtuAboveRight()->getTotalCost() << ","
-////		                    << rpcBestCU->getCtuLeft()->getTotalCost() << ","
-//		                    << rpcBestCU->getSkipFlag(0)
-//		                    << std::endl;
+//mhevc
+  //m_pcEncCfg->getOfstream() << (int)finalDepth << "," << uiDepth << std::endl;
+  m_pcEncCfg->getOfstream() << uiDepth <<","<< (int)finalDepth <<",";
+
 
   xCopyYuv2Pic( rpcBestCU->getPic(), rpcBestCU->getCtuRsAddr(), rpcBestCU->getZorderIdxInCtu(), uiDepth, uiDepth );   // Copy Yuv data to picture Yuv
   if (bBoundary)
