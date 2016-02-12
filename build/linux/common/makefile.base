@@ -47,7 +47,8 @@ endif
 
 # default cpp flags for all configurations
 #CPPFLAGS          = -Wall -fPIC $(DEFS) -I$(CURDIR)/$(INC_DIR) $(USER_INC_DIRS)
-CPPFLAGS          = -fPIC $(DEFS) -I$(CURDIR)/$(INC_DIR) $(USER_INC_DIRS) -Wall -Wshadow -Wno-sign-compare -Werror
+#CPPFLAGS          = -fPIC $(DEFS) -I$(CURDIR)/$(INC_DIR) $(USER_INC_DIRS) -Wall -Wshadow -Wno-sign-compare -Werror
+CPPFLAGS          = -fPIC $(DEFS) -I$(CURDIR)/$(INC_DIR) $(USER_INC_DIRS) -Wall -Wno-sign-compare -Werror
 
 ########## 
 # enforce 32-bit build : 1=yes, 0=no
@@ -306,6 +307,15 @@ $(OBJ_DIR)/%.r.o: $(SRC_DIR4)/%.c
 # create debug objects
 $(OBJ_DIR)/%.d.o: $(SRC_DIR4)/%.c
 	$(COMPILE_AND_DEPEND_DEBUG_C)
+
+#mm_algs.o: /home/jean/personal/learn/doctor/hevc/mhevc/source/Lib/TLibEncoder/mm_algs.cpp /home/jean/personal/learn/doctor/hevc/mhevc/source/Lib/TLibEncoder/mm_algs.h
+#	$(CXX) $(CFLAGS) -c /home/jean/personal/learn/doctor/hevc/mhevc/source/Lib/TLibEncoder/mm_algs.cpp
+#bsgd.o: /home/jean/personal/learn/doctor/hevc/mhevc/source/Lib/TLibEncoder/bsgd.cpp /home/jean/personal/learn/doctor/hevc/mhevc/source/Lib/TLibEncoder/bsgd.h
+#	$(CXX) $(CFLAGS) -c /home/jean/personal/learn/doctor/hevc/mhevc/source/Lib/TLibEncoder/bsgd.cpp
+#llsvm.o: /home/jean/personal/learn/doctor/hevc/mhevc/source/Lib/TLibEncoder/llsvm.cpp /home/jean/personal/learn/doctor/hevc/mhevc/source/Lib/TLibEncoder/llsvm.h
+#	$(CXX) $(CFLAGS) -c /home/jean/personal/learn/doctor/hevc/mhevc/source/Lib/TLibEncoder/llsvm.cpp
+#budgetedSVM.o: /home/jean/personal/learn/doctor/hevc/mhevc/source/Lib/TLibEncoder/budgetedSVM.cpp /home/jean/personal/learn/doctor/hevc/mhevc/source/Lib/TLibEncoder/budgetedSVM.h
+#	$(CXX) $(CFLAGS) -c /home/jean/personal/learn/doctor/hevc/mhevc/source/Lib/TLibEncoder/budgetedSVM.cpp
 
 
 #########################################################

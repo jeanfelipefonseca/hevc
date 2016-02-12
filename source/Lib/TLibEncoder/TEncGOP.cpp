@@ -1089,7 +1089,7 @@ Void TEncGOP::compressGOP( Int iPOCLast, Int iNumPicRcvd, TComList<TComPic*>& rc
   {
     m_pcCfg->setEncodedFlag(iGOPid, false);
   }
-
+  cout << "m_iGopSize: "<< m_iGopSize << endl;
   for ( Int iGOPid=0; iGOPid < m_iGopSize; iGOPid++ )
   {
     if (m_pcCfg->getEfficientFieldIRAPEnabled())
@@ -1808,6 +1808,16 @@ Void TEncGOP::compressGOP( Int iPOCLast, Int iNumPicRcvd, TComList<TComPic*>& rc
     {
       iGOPid=effFieldIRAPMap.restoreGOPid(iGOPid);
     }
+    //mhevc
+    if (iGOPid == 1) {
+    	m_pcEncTop->setTrainingState(false);
+    	cout << "##### Start predicting!!!" << endl;
+    }
+    if (iGOPid == m_iGopSize-1) {
+    	m_pcEncTop->setTrainingState(true);
+    	cout << "##### Start training!" << endl;
+    }
+
   } // iGOPid-loop
 
   delete pcBitstreamRedirect;

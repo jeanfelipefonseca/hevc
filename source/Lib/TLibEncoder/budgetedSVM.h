@@ -389,7 +389,7 @@ class budgetedData
 			\param [in] keepAssignments True for AMM batch, otherwise false. File 'temp_assigns.txt' will be created and deleted to keep the assignments.
 			\param [in] yLabels Possible labels in the classification problem, for training data is NULL since they are inferred from data.
 		*/
-		budgetedData(bool keep_Assignments = false, vector <int> *ylabels = NULL);
+		budgetedData(bool keepAssignments = false, vector <int> *yLabels = NULL);	
 		
 
 		/*! \fn budgetedData(const char fileName[], unsigned int dimension, unsigned int chunkSize, bool keepAssignments = false, vector <int> *yLabels = NULL)
@@ -400,7 +400,7 @@ class budgetedData
 			\param [in] keepAssignments True for AMM batch, otherwise false. File 'temp_assigns.txt' will be created and deleted to keep the assignments.
 			\param [in] yLabels Possible labels in the classification problem, for training data is NULL since inferred from data.
 		*/		
-		budgetedData(const char fileName[], unsigned int Dimension, unsigned int chunkSize, bool keep_Assignments = false, vector <int> *ylabels = NULL);
+		budgetedData(const char fileName[], unsigned int dimension, unsigned int chunkSize, bool keepAssignments = false, vector <int> *yLabels = NULL);
 		
 		/*! \fn virtual ~budgetedData(void)
 			\brief Destructor, cleans up the memory.
@@ -770,7 +770,7 @@ class budgetedModel
 	\param [out] outputFile Filename of output file (only used during testing phase).
 	\param [out] param Parameter object modified by user input.
 */
-void parseInputPrompt(int argc, char **argv, bool trainingPhase, char *inputFile, char *modelFile, char *outputFile, parameters *param);
+void parseInputPrompt(int argc, const char **argv, bool trainingPhase, const char *inputFile, char *modelFile, char *outputFile, parameters *param);
 
 /*! \fn void printUsagePrompt(bool trainingPhase, parameters *param)
 	\brief Prints the instructions on how to use the software to standard output.

@@ -49,6 +49,12 @@
 #include "TLibCommon/TComChromaFormat.h"
 #include "math.h"
 
+#include <dlib/svm.h>
+#include <dlib/rand.h>
+#include <dlib/matrix.h>
+#include <vector>
+//using namespace dlib;
+
 //! \ingroup TLibEncoder
 //! \{
 

@@ -209,14 +209,14 @@ int budgetedModel::getAlgorithm(const char *filename)
 	\param [in] keepAssignments True for AMM batch, otherwise false.
 	\param [in] yLabels Possible labels in the classification problem, for training data is NULL since inferred from data.
 */
-budgetedData::budgetedData(bool keep_Assignments, vector <int> *ylabels)
+budgetedData::budgetedData(bool keepAssignments, vector <int> *yLabels)
 {
 	this->ifileName = NULL;
 	this->ifileNameAssign = NULL;
 	this->ifile = NULL;
 	this->assignments = NULL;
 	this->al = NULL;
-	this->keepAssignments = keep_Assignments;
+	this->keepAssignments = keepAssignments;
 	this->loadTime = 0;
 	this->N = 0;
 	this->dataPartiallyLoaded = false;
@@ -224,11 +224,11 @@ budgetedData::budgetedData(bool keep_Assignments, vector <int> *ylabels)
 	this->numNonZeroFeatures = 0;
 	
 	// if labels provided use them, this happens in the case of testing data
-	if (ylabels)
+	if (yLabels)
 	{
-		for (unsigned int i = 0; i < (*ylabels).size(); i++)
+		for (unsigned int i = 0; i < (*yLabels).size(); i++)
 		{
-			this->yLabels.push_back((*ylabels)[i]);
+			this->yLabels.push_back((*yLabels)[i]);
 		}
 	}
 }
@@ -241,10 +241,10 @@ budgetedData::budgetedData(bool keep_Assignments, vector <int> *ylabels)
 	\param [in] keepAssignments True for AMM batch, otherwise false.
 	\param [in] yLabels Possible labels in the classification problem, for training data is NULL since inferred from data.
 */		
-budgetedData::budgetedData(const char fileName[], unsigned int Dimension, unsigned int chunkSize, bool keep_Assignments, vector <int> *ylabels)
+budgetedData::budgetedData(const char fileName[], unsigned int dimension, unsigned int chunkSize, bool keepAssignments, vector <int> *yLabels)
 {
 	this->ifileName = strdup(fileName);
-	this->dimension = Dimension;
+	this->dimension = dimension;
 	this->dimensionHighestSeen = 0;
 	
 	this->al = new (nothrow) unsigned char[chunkSize];
@@ -254,8 +254,8 @@ budgetedData::budgetedData(const char fileName[], unsigned int Dimension, unsign
 	}
 	
 	// keepAssignments is used for AMM_batch, where we hold the epoch assignments of data points to hyperplanes
-	this->keepAssignments = keep_Assignments;
-	if (keep_Assignments)
+	this->keepAssignments = keepAssignments;
+	if (keepAssignments)
 	{
 		this->ifileNameAssign = strdup("temp_assigns.txt");
 		this->assignments = new (nothrow) unsigned int[chunkSize];
@@ -264,11 +264,11 @@ budgetedData::budgetedData(const char fileName[], unsigned int Dimension, unsign
 		this->assignments = NULL;
 	
 	// if labels provided use them, this happens in the case of testing data
-	if (ylabels)
+	if (yLabels)
 	{
-		for (unsigned int i = 0; i < (*ylabels).size(); i++)
+		for (unsigned int i = 0; i < (*yLabels).size(); i++)
 		{
-			this->yLabels.push_back((*ylabels)[i]);
+			this->yLabels.push_back((*yLabels)[i]);
 		}
 	}
 	
@@ -943,15 +943,15 @@ void parseInputPrompt(int argc, char **argv, bool trainingPhase, char *inputFile
 			else
 				++p;
 			sprintf(modelFile, "%s.model", p);
-		}	
+		}
 		
 		// modify parameters
-		for (unsigned int i2 = 0; i2 < option.size(); i2++)
+		for (unsigned int i = 0; i < option.size(); i++)
 		{
-			switch (option[i2])
+			switch (option[i])
 			{
 				case 'A':
-					(*param).ALGORITHM = (unsigned int) value[i2];
+					(*param).ALGORITHM = (unsigned int) value[i];
 					if ((*param).ALGORITHM > 4)
 					{
 						sprintf(text, "Input parameter '-A %d' out of bounds!\nRun 'budgetedsvm-train()' for help.\n", (*param).ALGORITHM);
@@ -959,19 +959,19 @@ void parseInputPrompt(int argc, char **argv, bool trainingPhase, char *inputFile
 					}
 					break;
 				case 'e':
-					(*param).NUM_EPOCHS = (unsigned int) value[i2];
+					(*param).NUM_EPOCHS = (unsigned int) value[i];
 					break;
 				case 'd':
-					(*param).DIMENSION = (unsigned int) value[i2];
+					(*param).DIMENSION = (unsigned int) value[i];
 					break;
 				case 's':
-					(*param).NUM_SUBEPOCHS = (unsigned int) value[i2];
+					(*param).NUM_SUBEPOCHS = (unsigned int) value[i];
 					break;
 				case 'k':
-					(*param).K_PARAM = (unsigned int) value[i2];
+					(*param).K_PARAM = (unsigned int) value[i];
 					break;
 				case 'C':
-					(*param).C_PARAM = (double) value[i2];
+					(*param).C_PARAM = (double) value[i];
 					if ((*param).C_PARAM < 0.0)
 					{
 						sprintf(text, "Input parameter '-C' should be a positive real number!\nRun 'budgetedsvm-train()' for help.\n");
@@ -979,7 +979,7 @@ void parseInputPrompt(int argc, char **argv, bool trainingPhase, char *inputFile
 					}
 					break;
 				case 'L':
-					(*param).LAMBDA_PARAM = (double) value[i2];
+					(*param).LAMBDA_PARAM = (double) value[i];
 					if ((*param).LAMBDA_PARAM < 0.0)
 					{
 						sprintf(text, "Input parameter '-L' should be a positive real number!\nRun 'budgetedsvm-train()' for help.\n");
@@ -988,10 +988,10 @@ void parseInputPrompt(int argc, char **argv, bool trainingPhase, char *inputFile
 					break;
 				
 				case 'B':
-					(*param).BUDGET_SIZE = (unsigned int) value[i2];
+					(*param).BUDGET_SIZE = (unsigned int) value[i];
 					break;
 				case 'G':
-					(*param).GAMMA_PARAM = (double) value[i2];
+					(*param).GAMMA_PARAM = (double) value[i];
 					if ((*param).GAMMA_PARAM < 0.0)
 					{
 						sprintf(text, "Input parameter '-G' should be a positive real number!\nRun 'budgetedsvm-train()' for help.\n");
@@ -999,17 +999,17 @@ void parseInputPrompt(int argc, char **argv, bool trainingPhase, char *inputFile
 					}
 					break;
 				case 'M':
-					(*param).MAINTENANCE_SAMPLING_STRATEGY = (unsigned int) value[i2];
+					(*param).MAINTENANCE_SAMPLING_STRATEGY = (unsigned int) value[i];
 					break; 
 				
 				case 'b':
-					(*param).BIAS_TERM = (double) value[i2];
+					(*param).BIAS_TERM = (double) value[i];
 					break;
 				case 'v':
-					(*param).VERBOSE = (value[i2] != 0);
+					(*param).VERBOSE = (value[i] != 0);
 					break;
 				case 'l':
-					(*param).LIMIT_NUM_WEIGHTS_PER_CLASS = (unsigned int) value[i2];
+					(*param).LIMIT_NUM_WEIGHTS_PER_CLASS = (unsigned int) value[i];
 					if ((*param).LIMIT_NUM_WEIGHTS_PER_CLASS < 1)
 					{
 						sprintf(text, "Input parameter '-l' should be a positive real number!\nRun 'budgetedsvm-train()' for help.\n");
@@ -1018,7 +1018,7 @@ void parseInputPrompt(int argc, char **argv, bool trainingPhase, char *inputFile
 					break;				
 				
 				case 'z':
-					(*param).CHUNK_SIZE = (unsigned int) value[i2];
+					(*param).CHUNK_SIZE = (unsigned int) value[i];
 					if ((*param).CHUNK_SIZE < 1)
 					{
 						sprintf(text, "Input parameter '-z' should be a positive real number!\nRun 'budgetedsvm-train()' for help.\n");
@@ -1026,7 +1026,7 @@ void parseInputPrompt(int argc, char **argv, bool trainingPhase, char *inputFile
 					}
 					break;
 				case 'w':
-					(*param).CHUNK_WEIGHT = (unsigned int) value[i2];
+					(*param).CHUNK_WEIGHT = (unsigned int) value[i];
 					if ((*param).CHUNK_WEIGHT < 1)
 					{
 						sprintf(text, "Input parameter '-w' should be a positive real number!\nRun 'budgetedsvm-train()' for help.\n");
@@ -1034,11 +1034,11 @@ void parseInputPrompt(int argc, char **argv, bool trainingPhase, char *inputFile
 					}
 					break;
 				case 'S':
-					(*param).VERY_SPARSE_DATA = (unsigned int) (value[i2] != 0);
+					(*param).VERY_SPARSE_DATA = (unsigned int) (value[i] != 0);
 					break;
 
 				default:
-					sprintf(text, "Error, unknown input parameter '-%c'!\nRun 'budgetedsvm-train' for help.\n", option[i2]);
+					sprintf(text, "Error, unknown input parameter '-%c'!\nRun 'budgetedsvm-train' for help.\n", option[i]);
 					svmPrintErrorString(text);
 					break;
 			}
@@ -1217,15 +1217,15 @@ void parseInputPrompt(int argc, char **argv, bool trainingPhase, char *inputFile
 		}
 		
 		// modify parameters
-		for (unsigned int i3 = 0; i3 < option.size(); i3++)
+		for (unsigned int i = 0; i < option.size(); i++)
 		{
-			switch (option[i3])
+			switch (option[i])
 			{
 				case 'v':
-					(*param).VERBOSE = (value[i3] != 0);
+					(*param).VERBOSE = (value[i] != 0);
 					break;
 				case 'z':
-					(*param).CHUNK_SIZE = (unsigned int) value[i3];
+					(*param).CHUNK_SIZE = (unsigned int) value[i];
 					if ((*param).CHUNK_SIZE < 1)
 					{
 						sprintf(text, "Input parameter '-z' should be a positive real number!\nRun 'budgetedsvm-train()' for help.\n");
@@ -1233,7 +1233,7 @@ void parseInputPrompt(int argc, char **argv, bool trainingPhase, char *inputFile
 					}
 					break;
 				case 'w':
-					(*param).CHUNK_WEIGHT = (unsigned int) value[i3];
+					(*param).CHUNK_WEIGHT = (unsigned int) value[i];
 					if ((*param).CHUNK_WEIGHT < 1)
 					{
 						sprintf(text, "Input parameter '-w' should be a positive real number!\nRun 'budgetedsvm-train()' for help.\n");
@@ -1241,11 +1241,11 @@ void parseInputPrompt(int argc, char **argv, bool trainingPhase, char *inputFile
 					}
 					break;
 				case 'S':
-					(*param).VERY_SPARSE_DATA = (unsigned int) (value[i3] != 0);
+					(*param).VERY_SPARSE_DATA = (unsigned int) (value[i] != 0);
 					break;
 
 				default:
-					sprintf(text, "Error, unknown input parameter '-%c'!\nRun 'budgetedsvm-predict' for help.\n", option[i3]);
+					sprintf(text, "Error, unknown input parameter '-%c'!\nRun 'budgetedsvm-predict' for help.\n", option[i]);
 					svmPrintErrorString(text);
 					break;
 			}

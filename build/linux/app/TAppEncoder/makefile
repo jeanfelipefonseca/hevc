@@ -3,7 +3,7 @@ CONFIG 				= CONSOLE
 
 # set directories to your wanted values
 SRC_DIR				= ../../../../source/App/TAppEncoder
-INC_DIR				= ../../../../source/Lib
+INC_DIR				= ../../../../source/Lib -I/home/jean/personal/learn/machlearning/dlib-18.18/
 LIB_DIR				= ../../../../lib
 BIN_DIR				= ../../../../bin
 
@@ -35,6 +35,7 @@ OBJS          		= 	\
 					$(OBJ_DIR)/encmain.o \
 					$(OBJ_DIR)/TAppEncCfg.o \
 					$(OBJ_DIR)/TAppEncTop.o \
+#					$(OBJ_DIR)/TEncSGD.o \
 
 # set libs to link with
 LIBS				= -ldl
@@ -42,7 +43,7 @@ LIBS				= -ldl
 DEBUG_LIBS			=
 RELEASE_LIBS		=
 
-STAT_LIBS			= -lpthread
+STAT_LIBS			= -lpthread -larmadillo
 DYN_LIBS			=
 
 

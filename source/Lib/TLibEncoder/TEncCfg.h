@@ -44,6 +44,7 @@
 
 #include "TLibCommon/CommonDef.h"
 #include "TLibCommon/TComSlice.h"
+//#include "TEncSGD.h"
 #include <assert.h>
 #include <iostream>
 #include <fstream>
@@ -397,13 +398,15 @@ protected:
   UInt        m_summaryVerboseness;                           ///< Specifies the level of the verboseness of the text output.
 
   //mhevc
-  ofstream 			  m_arrf;                         ///< JEAN: ofstream to write collected data
+  ofstream 			  m_arrf, m_testfile;                                  ///< JEAN: ofstream to write collected data
+  //TEncSGD			  m_sgd;							       ///< pointer to acess SGD functions
 
 public:
   TEncCfg()
   : m_tileColumnWidth()
   , m_tileRowHeight()
   , m_arrf("newarrf.out", ios::out)
+  , m_testfile("testfile.out", ios::out)
   {
     m_PCMBitDepth[CHANNEL_TYPE_LUMA]=8;
     m_PCMBitDepth[CHANNEL_TYPE_CHROMA]=8;
@@ -412,11 +415,13 @@ public:
   virtual ~TEncCfg()
   {
 	  m_arrf.close();
+	  m_testfile.close();
   }
 
   //mhevc: access method to the ofstream member
   std::ostream& getOfstream(){ return m_arrf; }
-
+  std::ostream& getTestFile(){ return m_testfile; }
+//  TEncSGD acessSGD()         { return m_sgd; }
   Void setProfile(Profile::Name profile) { m_profile = profile; }
   Void setLevel(Level::Tier tier, Level::Name level) { m_levelTier = tier; m_level = level; }
 

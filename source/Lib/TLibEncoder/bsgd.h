@@ -170,6 +170,16 @@ class budgetedModelBSGD : public budgetedModel
 */
 void trainBSGD(budgetedData *trainData, parameters *param, budgetedModelBSGD *model);
 
+/*! \fn void trainOnlieBSGD(budgetedData *trainData, parameters *param, budgetedModelBSGD *model)
+	\brief Train BSGD.
+	\param [in] trainData Input training data.
+	\param [in] param The parameters of the algorithm.
+	\param [in,out] model Initial BSGD model.
+
+	The function trains in an online fashion the BSGD model, given each feature as an input data, the initial model (most often zero-weight model), and the parameters of the model.
+*/
+void trainOnlineBSGD(budgetedData *trainData, parameters *param, budgetedModelBSGD *model);
+
 /*! \fn float predictBSGD(budgetedData *testData, parameters *param, budgetedModelBSGD *model, vector <char> *labels)
 	\brief Given a BSGD model, predict the labels of testing data.
 	\param [in] testData Input test data.

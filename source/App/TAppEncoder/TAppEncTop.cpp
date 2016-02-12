@@ -48,6 +48,7 @@
 
 using namespace std;
 
+
 //! \ingroup TAppEncoder
 //! \{
 
@@ -632,11 +633,11 @@ Void TAppEncTop::xWriteOutput(std::ostream& bitstreamFile, Int iNumEncoded, cons
       }
 
       const AccessUnit& auTop = *(iterBitstream++);
-      const vector<UInt>& statsTop = writeAnnexB(bitstreamFile, auTop);
+      const std::vector<UInt>& statsTop = writeAnnexB(bitstreamFile, auTop);
       rateStatsAccum(auTop, statsTop);
 
       const AccessUnit& auBottom = *(iterBitstream++);
-      const vector<UInt>& statsBottom = writeAnnexB(bitstreamFile, auBottom);
+      const std::vector<UInt>& statsBottom = writeAnnexB(bitstreamFile, auBottom);
       rateStatsAccum(auBottom, statsBottom);
     }
   }
@@ -662,7 +663,7 @@ Void TAppEncTop::xWriteOutput(std::ostream& bitstreamFile, Int iNumEncoded, cons
       }
 
       const AccessUnit& au = *(iterBitstream++);
-      const vector<UInt>& stats = writeAnnexB(bitstreamFile, au);
+      const std::vector<UInt>& stats = writeAnnexB(bitstreamFile, au);
       rateStatsAccum(au, stats);
     }
   }
@@ -674,7 +675,7 @@ Void TAppEncTop::xWriteOutput(std::ostream& bitstreamFile, Int iNumEncoded, cons
 Void TAppEncTop::rateStatsAccum(const AccessUnit& au, const std::vector<UInt>& annexBsizes)
 {
   AccessUnit::const_iterator it_au = au.begin();
-  vector<UInt>::const_iterator it_stats = annexBsizes.begin();
+  std::vector<UInt>::const_iterator it_stats = annexBsizes.begin();
 
   for (; it_au != au.end(); it_au++, it_stats++)
   {

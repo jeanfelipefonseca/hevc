@@ -47,6 +47,13 @@
 
 #include "TLibVideoIO/TVideoIOYuv.h"
 
+
+#include <dlib/svm.h>
+#include <dlib/rand.h>
+#include <dlib/matrix.h>
+//using namespace dlib;
+
+
 #include "TEncCfg.h"
 #include "TEncGOP.h"
 #include "TEncSlice.h"
@@ -57,6 +64,22 @@
 #include "TEncSampleAdaptiveOffset.h"
 #include "TEncPreanalyzer.h"
 #include "TEncRateCtrl.h"
+
+#define FEATURES_NUMBER 3
+#define LABELS_NUMBER 1
+#define BSVM_ENABLE 0
+#define ONLINE_LEARNING 0
+
+/*typedef dlib::matrix<double, FEATURES_NUMBER, 1> sample_type;
+typedef dlib::radial_basis_kernel<sample_type> kernel_type;*/
+
+//dlib::matrix<double, FEATURES_NUMBER, 1> samples;
+//std::vector<sample_type> samples;
+//std::vector<double> labels;
+
+//sample_type samp;
+
+
 //! \ingroup TLibEncoder
 //! \{
 
@@ -68,6 +91,15 @@
 class TEncTop : public TEncCfg
 {
 private:
+  //mhevc
+  // Here we create an instance of the pegasos svm trainer object we will be using.
+  dlib::svm_pegasos<kernel_type> m_trainer;
+  dlib::svm_pegasos<pkernel_type> p_trainer;
+  Int					  m_nErrorClassification;
+  bool 					  m_resetModel;
+  double trainingCount;
+  double predictingCount;
+  bool   trainingState;
   // picture
   Int                     m_iPOCLast;                     ///< time index (POC)
   Int                     m_iNumPicRcvd;                  ///< number of received pictures
@@ -135,6 +167,20 @@ public:
   // member access functions
   // -------------------------------------------------------------------------------------------------------------------
 
+  //mhevc
+  dlib::svm_pegasos<kernel_type>*      getSVMTrainer         () { return  &m_trainer; }
+  dlib::svm_pegasos<pkernel_type>*      getPolyTrainer        () { return  &p_trainer; }
+  Void 					  calcSvmClassError     (int expected, int actual);
+  Int				      getnErrorClassification () {return m_nErrorClassification;  }
+  bool					  haveToResetModel      () { return  m_resetModel;            }
+  Void					  setResetModel         (bool isResetModel) { m_resetModel = isResetModel;}
+  void					  updateTrainingCount   () { trainingCount++; 		          }
+  double				  getTrainingCount      () { return trainingCount;            }
+  void					  updatePredictCount    () { predictingCount++; 	          }
+  double				  getPredictCount       () { return predictingCount;          }
+  bool 					  isTraining            () { return trainingState;            }
+  void					  setTrainingState		(bool state) { trainingState = state; }
+  //mhevc
   TComList<TComPic*>*     getListPic            () { return  &m_cListPic;             }
   TEncSearch*             getPredSearch         () { return  &m_cSearch;              }
 

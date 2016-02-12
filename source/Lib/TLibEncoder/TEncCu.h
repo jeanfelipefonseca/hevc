@@ -39,6 +39,19 @@
 #define __TENCCU__
 
 // Include files
+#include <iostream>
+#include <dlib/svm.h>
+#include <dlib/rand.h>
+#include <vector>
+
+#include "../Eigen/Dense"
+using namespace Eigen;
+
+#include "budgetedSVM.h"
+#include "mm_algs.h"
+#include "bsgd.h"
+#include "llsvm.h"
+
 #include "TLibCommon/CommonDef.h"
 #include "TLibCommon/TComYuv.h"
 #include "TLibCommon/TComPrediction.h"
@@ -49,8 +62,25 @@
 #include "TEncEntropy.h"
 #include "TEncSearch.h"
 #include "TEncRateCtrl.h"
+
+//#include <vector>
+//using namespace dlib;
+
+#define FEATURES_NUMBER 3
+#define REDUCED_FEATURES_NUMBER 6
+#define SVM_ONLINE 1
+
+typedef dlib::matrix<double, FEATURES_NUMBER, 1> sample_type;
+typedef dlib::radial_basis_kernel<sample_type> kernel_type;
+typedef dlib::polynomial_kernel<sample_type> pkernel_type;
+
+typedef dlib::matrix<double, REDUCED_FEATURES_NUMBER, 1> reduced_sample_type;
+typedef dlib::radial_basis_kernel<reduced_sample_type> reduced_kernel_type;
+
 //! \ingroup TLibEncoder
 //! \{
+
+//typedef matrix<double, 4, 1> sample_type;
 
 class TEncTop;
 class TEncSbac;
@@ -101,8 +131,21 @@ private:
   //mhevc
   Int					  mhevc_countInter;
   Int					  mhevc_countIntra;
+  dlib::svm_pegasos<reduced_kernel_type>* 			  r_trainer;
+  dlib::svm_pegasos<kernel_type>* 			  trainer;
+  dlib::svm_pegasos<pkernel_type>*			  ptrainer;
+  std::vector<sample_type> samples;
+  std::vector<sample_type> chosen_samples;
+  std::vector<double> labels;
+  bool is2Nx2N;
+  bool isTraining;
+  sample_type lastSample;
 
 public:
+  //mhevc: method to write data file in libsvm format
+  void writeDataFileLibSVMFormat(double *features, int features_number, double *labels, int labels_number, bool isTraining);
+  void trainBudgetedSVM(int algorithm, parameters &param, const char inputFileName[1024]);
+  void predictBudgetedSVM(int algorithm, const char testFileName[1024], char modelFileName[1024]);
   /// copy parameters from encoder class
   Void  init                ( TEncTop* pcEncTop );
 

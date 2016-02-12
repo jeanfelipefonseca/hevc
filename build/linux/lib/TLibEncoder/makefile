@@ -3,7 +3,7 @@ CONFIG 			= LIBRARY
 
 # set pathes to the correct directories
 SRC_DIR			= ../../../../source/Lib/TLibEncoder
-INC_DIR			= ../../../../source/Lib
+INC_DIR			= ../../../../source/Lib -I/home/jean/personal/learn/machlearning/dlib-18.18/
 LIB_DIR			= ../../../../lib
 BIN_DIR			= ../../../../bin
 
@@ -57,10 +57,14 @@ OBJS          	= \
 			$(OBJ_DIR)/TEncPreanalyzer.o \
 			$(OBJ_DIR)/WeightPredAnalysis.o \
 			$(OBJ_DIR)/TEncRateCtrl.o \
-			$(OBJ_DIR)/bsgd.o \
 			$(OBJ_DIR)/budgetedSVM.o \
+			$(OBJ_DIR)/TEncSGD.o \
+			$(OBJ_DIR)/budgetedSVM.o \
+			$(OBJ_DIR)/bsgd.o \
+			$(OBJ_DIR)/mm_algs.o \
+			$(OBJ_DIR)/llsvm.o \
 
-LIBS				= -lpthread
+LIBS				= -lpthread -llapack lblas
 
 DEBUG_LIBS			=
 RELEASE_LIBS		=

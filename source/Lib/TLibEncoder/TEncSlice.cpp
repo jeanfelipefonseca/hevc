@@ -830,6 +830,8 @@ Void TEncSlice::compressSlice( TComPic* pcPic, const Bool bCompressEntireSlice, 
     }
 
     // run CTU trial encoder
+    //mhevc
+    //const clock_t begin_time = clock();
     m_pcCuEncoder->compressCtu( pCtu );
 
 
@@ -845,6 +847,9 @@ Void TEncSlice::compressSlice( TComPic* pcPic, const Bool bCompressEntireSlice, 
 
     // encode CTU and calculate the true bit counters.
     m_pcCuEncoder->encodeCtu( pCtu );
+    //std::cout << float( clock () - begin_time ) /  CLOCKS_PER_SEC << std::endl;
+    //std::cout << ctuTsAddr << std::endl;
+    //std::cout << float( clock () - begin_time ) /  CLOCKS_PER_SEC << std::endl;
 
 
     pRDSbacCoder->setBinCountingEnableFlag( false );
