@@ -102,7 +102,7 @@ int convertToClassification(double eval) {
  */
 Void TEncCu::create(UChar uhTotalDepth, UInt uiMaxWidth, UInt uiMaxHeight, ChromaFormat chromaFormat)
 {
-	Int i;
+	Int index;
 
 	m_uhTotalDepth   = uhTotalDepth + 1;
 	m_ppcBestCU      = new TComDataCU*[m_uhTotalDepth-1];
